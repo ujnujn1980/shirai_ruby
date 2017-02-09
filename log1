@@ -1,0 +1,2803 @@
+Last login: Sun Feb  5 11:33:11 on ttys002
+jun-MacBook:~ junoyoshi$
+jun-MacBook:~ junoyoshi$
+jun-MacBook:~ junoyoshi$
+jun-MacBook:~ junoyoshi$ pwd
+/Users/junoyoshi
+jun-MacBook:~ junoyoshi$ ls
+Applications	Downloads	Movies		Public
+Desktop		Dropbox		Music		PycharmProjects
+Documents	Library		Pictures	VirtualBox VMs
+jun-MacBook:~ junoyoshi$
+jun-MacBook:~ junoyoshi$
+jun-MacBook:~ junoyoshi$
+jun-MacBook:~ junoyoshi$ cd Desktop/
+jun-MacBook:Desktop junoyoshi$ s
+-bash: s: command not found
+jun-MacBook:Desktop junoyoshi$ ls
+moge
+jun-MacBook:Desktop junoyoshi$
+jun-MacBook:Desktop junoyoshi$
+jun-MacBook:Desktop junoyoshi$ cd moge/vagrant/
+jun-MacBook:vagrant junoyoshi$ ls
+2Gear.rb			hoge.rb
+2koge.rb			koge.rb
+Gear.rb				moge.rb
+Vagrantfile			pgdg-centos96-9.6-3.noarch.rpm
+centos65-x86_64-20140116.box
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$ vagrant ssh
+Last login: Sun Feb  5 11:30:47 2017 from 10.0.2.2
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$ pwd
+/home/vagrant
+[vagrant@wealthcare-api-1 ~]$ ls
+data
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$ cd data/
+[vagrant@wealthcare-api-1 data]$ ls
+2Gear.rb  Vagrantfile                   koge.rb
+2koge.rb  centos65-x86_64-20140116.box  moge.rb
+Gear.rb   hoge.rb                       pgdg-centos96-9.6-3.noarch.rpm
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$ vi koge.rb
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+2koge.rb:13:in `<class:Wheel>': undefined local variable or method `tire' for Wheel:Class (NameError)
+	from 2koge.rb:1:in `<main>'
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+2koge.rb:5:in `initialize': undefined method `weelify' for #<Wheel:0x007f3e39a15cd8> (NoMethodError)
+Did you mean?  wheelify
+	from 2koge.rb:21:in `new'
+	from 2koge.rb:21:in `<class:Wheel>'
+	from 2koge.rb:1:in `<main>'
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+2koge.rb:5:in `initialize': undefined method `weelify' for #<Wheel:0x007f414ecddb38> (NoMethodError)
+Did you mean?  wheelify
+	from 2koge.rb:22:in `new'
+	from 2koge.rb:22:in `<class:Wheel>'
+	from 2koge.rb:1:in `<main>'
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+2koge.rb:16:in `block in wheelify': undefined local variable or method `wheel' for #<Wheel:0x007f62acfb9d00> (NameError)
+Did you mean?  wheels
+	from 2koge.rb:15:in `collect'
+	from 2koge.rb:15:in `wheelify'
+	from 2koge.rb:5:in `initialize'
+	from 2koge.rb:22:in `new'
+	from 2koge.rb:22:in `<class:Wheel>'
+	from 2koge.rb:1:in `<main>'
+[vagrant@wealthcare-api-1 data]$ ruby 3koge.rb
+3koge.rb:12: syntax error, unexpected keyword_end, expecting '}'
+  end
+     ^
+3koge.rb:23: syntax error, unexpected end-of-input, expecting keyword_end
+[vagrant@wealthcare-api-1 data]$ ruby 3koge.rb
+562
+668
+619
+639
+[vagrant@wealthcare-api-1 data]$ ruby 3koge.rb
+3koge.rb:12: syntax error, unexpected keyword_end, expecting '}'
+  end
+     ^
+3koge.rb:23: syntax error, unexpected end-of-input, expecting keyword_end
+[vagrant@wealthcare-api-1 data]$ ruby 3koge.rb
+562
+668
+619
+639
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+2koge.rb:16:in `block in wheelify': undefined local variable or method `wheel' for #<Wheel:0x007fdb9b8adb48> (NameError)
+Did you mean?  wheels
+	from 2koge.rb:15:in `collect'
+	from 2koge.rb:15:in `wheelify'
+	from 2koge.rb:5:in `initialize'
+	from 2koge.rb:22:in `new'
+	from 2koge.rb:22:in `<class:Wheel>'
+	from 2koge.rb:1:in `<main>'
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+2koge.rb:22:in `<class:Wheel>': undefined method `wheelify' for #<Wheel::Wheel:0x007fcc27e1dc78> (NoMethodError)
+	from 2koge.rb:1:in `<main>'
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+2koge.rb:22:in `<class:Wheel>': undefined method `diameters' for #<Wheel::Wheel:0x007fedcd2c1c90> (NoMethodError)
+	from 2koge.rb:1:in `<main>'
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+#<struct Wheel::Wheel tire=[[522, 20], [622, 23], [559, 30], [559, 40]], rim=nil>
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+#<struct Wheel::Wheel tire=[[522, 20], [622, 23], [559, 30], [559, 40]], rim=nil>
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$ ll
+total 286840
+-rw-r--r-- 1 vagrant vagrant       617  2月  5 12:09 2017 2Gear.rb
+-rw-r--r-- 1 vagrant vagrant       414  2月  5 14:15 2017 2koge.rb
+-rw-r--r-- 1 vagrant vagrant       302  2月  5 14:10 2017 3koge.rb
+-rw-r--r-- 1 vagrant vagrant       467  2月  5 14:29 2017 4gear.rb
+-rw-r--r-- 1 vagrant vagrant       347  2月  5 12:02 2017 Gear.rb
+-rw-r--r-- 1 vagrant vagrant      3369  2月  5 10:47 2017 Vagrantfile
+-rw-r--r-- 1 vagrant vagrant 293676266  2月  5 11:01 2017 centos65-x86_64-20140116.box
+-rw-r--r-- 1 vagrant vagrant       226  2月  5 11:58 2017 hoge.rb
+-rw-r--r-- 1 vagrant vagrant       238  2月  5 13:23 2017 koge.rb
+-rw-r--r-- 1 vagrant vagrant       219  2月  5 12:56 2017 moge.rb
+-rw-r--r-- 1 vagrant vagrant      4788  2月  5 10:47 2017 pgdg-centos96-9.6-3.noarch.rpm
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$ ruby 4gear.rb
+[vagrant@wealthcare-api-1 data]$ ruby 4gear.rb
+[vagrant@wealthcare-api-1 data]$ ruby 4gear.rb
+#<Gear:0x007f959da8d628>
+[vagrant@wealthcare-api-1 data]$ ruby 4gear.rb
+4gear.rb:11:in `ratio': undefined local variable or method `cof' for #<Gear:0x007fae59e59458> (NameError)
+Did you mean?  cog
+               @cog
+	from 4gear.rb:39:in `<main>'
+[vagrant@wealthcare-api-1 data]$ ruby 4gear.rb
+0.5
+[vagrant@wealthcare-api-1 data]$ ruby 4gear.rb
+0.5
+40.0
+[vagrant@wealthcare-api-1 data]$ ruby 4gear.rb
+0.5
+40.0
+4gear.rb:15:in `gear_inches': undefined method `diameter' for nil:NilClass (NoMethodError)
+	from 4gear.rb:41:in `<main>'
+[vagrant@wealthcare-api-1 data]$ ruby 4gear.rb
+0.5
+0.5
+40.0
+[vagrant@wealthcare-api-1 data]$ vi 4gear.rb
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$ ruby 4gear.rb
+0.5
+0.5
+130.0
+[vagrant@wealthcare-api-1 data]$ ruby 5gear.rb
+5gear.rb:44: syntax error, unexpected '}', expecting =>
+20, cog => 10, wheel = @Wheel}
+                              ^
+[vagrant@wealthcare-api-1 data]$ ruby 5gear.rb
+5gear.rb:44:in `<main>': undefined local variable or method `cahring' for main:Object (NameError)
+[vagrant@wealthcare-api-1 data]$ ruby 5gear.rb
+5gear.rb:44:in `<main>': undefined local variable or method `charing' for main:Object (NameError)
+[vagrant@wealthcare-api-1 data]$ ruby 5gear.rb
+160.0
+[vagrant@wealthcare-api-1 data]$ ruby 5gear.rb
+520.0
+[vagrant@wealthcare-api-1 data]$ ruby 5gear.rb
+2600.0
+[vagrant@wealthcare-api-1 data]$ ruby 5gear.rb
+2600.0
+[vagrant@wealthcare-api-1 data]$ ruby 5gear.rb
+2600.0
+[vagrant@wealthcare-api-1 data]$ ruby 5gear.rb
+2600.0
+[vagrant@wealthcare-api-1 data]$ ruby 5gear.rb
+2600.0
+[vagrant@wealthcare-api-1 data]$
+Broadcast message from vagrant@wealthcare-api-1
+	(unknown) at 15:46 ...
+
+The system is going down for halt NOW!
+Connection to 127.0.0.1 closed by remote host.
+Connection to 127.0.0.1 closed.
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$ pwd
+/Users/junoyoshi/Desktop/moge/vagrant
+jun-MacBook:vagrant junoyoshi$ ls
+2Gear.rb			Vagrantfile
+2koge.rb			centos65-x86_64-20140116.box
+3koge.rb			hoge.rb
+4gear.rb			koge.rb
+5gear.rb			moge.rb
+Gear.rb				pgdg-centos96-9.6-3.noarch.rpm
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$ VBoxManage list vms
+"Oracle 12c" {1938f84d-e5bb-4748-99e2-8ef345047091}
+"ap01" {a59b02e2-bcc1-44d6-96ed-42861c10d09d}
+"ruby" {57cdfeb4-4ed3-4186-a0b2-fa120cf12be2}
+"kali" {a50dca0d-49c2-4e82-a61c-a409794a0598}
+"Ubuntu" {ae0eb13f-8123-431e-a2a7-08db01e40cf8}
+"vagrant_default_1486260587000_41562" {56ae8205-4bb8-4813-8a2b-bf2061ad10bc}
+jun-MacBook:vagrant junoyoshi$ pwd
+/Users/junoyoshi/Desktop/moge/vagrant
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$ vagrant ssh
+Last login: Mon Feb  6 08:08:15 2017 from 10.0.2.2
+[vagrant@wealthcare-api-1 ~]$ cd data/
+[vagrant@wealthcare-api-1 data]$ ls
+2Gear.rb  5gear.rb                      hoge.rb
+2koge.rb  Gear.rb                       koge.rb
+3koge.rb  Vagrantfile                   moge.rb
+4gear.rb  centos65-x86_64-20140116.box  pgdg-centos96-9.6-3.noarch.rpm
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$ view 2Gear.rb
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$ view 2koge.rb
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+#<struct Wheel::Wheel tire=[[522, 20], [622, 23], [559, 30], [559, 40]], rim=nil>
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+#<struct Wheel::Wheel tire=[[522, 20], [622, 23], [559, 30], [559, 40]], rim=nil>
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+#<struct Wheel::Wheel tire=[[522, 20], [622, 23], [559, 30], [559, 40]], rim=nil>
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+#<struct Wheel::Wheel tire=[[522, 20], [622, 23], [559, 30], [559, 40]], rim=nil>
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+2koge.rb:19: syntax error, unexpected keyword_end, expecting '}'
+  end
+     ^
+2koge.rb:27: syntax error, unexpected end-of-input, expecting keyword_end
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+#<struct Wheel::Wheel tire=[[522, 20], [622, 23], [559, 30], [559, 40]], rim=nil>
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+#<struct Wheel::Wheel tire=[522, 20], rim=nil>
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+#<struct Wheel::Wheel tire=[[522, 20], [522, 20]], rim=nil>
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+522
+20
+522
+20
+#<Wheel:0x007f948c35a480>
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+2koge.rb:2: syntax error, unexpected ':', expecting keyword_end
+  attr_reader :wheels :tire, :rim
+                       ^
+2koge.rb:2: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+#<struct Wheel::Wheel tire=[[522, 20], [522, 20]], rim=nil>
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+2koge.rb:13:in `<class:Wheel>': undefined local variable or method `tire' for Wheel:Class (NameError)
+	from 2koge.rb:1:in `<main>'
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+#<struct Wheel::Wheel tire=[[522, 20], [522, 20]], rim=nil>
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+522
+20
+522
+20
+#<Wheel:0x007f5735be1c78>
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+#<Wheel:0x007f1bc87d5c40>
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+#<Wheel:0x007fc78510d8b8>
+[vagrant@wealthcare-api-1 data]$ ruby 2koge.rb
+562
+668
+619
+639
+[vagrant@wealthcare-api-1 data]$ ruby 2koge_refacted.rb
+562
+668
+619
+639
+[vagrant@wealthcare-api-1 data]$ ruby 2koge_refacted.rb
+2koge_refacted.rb:13:in `<class:Wheel>': undefined local variable or method `tire' for Wheel:Class (NameError)
+	from 2koge_refacted.rb:1:in `<main>'
+[vagrant@wealthcare-api-1 data]$ exit
+logout
+Connection to 127.0.0.1 closed.
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$ pwd
+/Users/junoyoshi/Desktop/moge/vagrant
+jun-MacBook:vagrant junoyoshi$ ls
+2Gear.rb			Vagrantfile
+2koge.rb			centos65-x86_64-20140116.box
+2koge_refacted.rb		hoge.rb
+3koge.rb			koge.rb
+4gear.rb			moge.rb
+5gear.rb			pgdg-centos96-9.6-3.noarch.rpm
+Gear.rb
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$ cd
+jun-MacBook:~ junoyoshi$ cd Downloads/
+jun-MacBook:Downloads junoyoshi$ ls
+01.virtualbox
+02.jdk
+03.cyberduck
+04.dropbox
+05.oracle
+06.ruby
+07.specs
+08.office
+09.tomcat
+0から学ぶJava講座.pptx
+10.eclipse
+11.kindle
+12.browser.for.SQLite
+13.abobe
+14.BIH
+15.vagrant
+99.qwerty
+ゼロからのRails開発入門-1ヶ月で学べるアジャイル開発手法-.pptx
+オブジェクト指向設計実践ガイド要約.pdf
+jun-MacBook:Downloads junoyoshi$
+jun-MacBook:Downloads junoyoshi$
+jun-MacBook:Downloads junoyoshi$ ll
+total 12552
+drwxr-xr-x   9 junoyoshi  staff      306  2  4 07:31 01.virtualbox
+drwxr-xr-x   4 junoyoshi  staff      136 11 13 17:28 02.jdk
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:32 03.cyberduck
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:29 04.dropbox
+drwxr-xr-x   4 junoyoshi  staff      136 11 13 17:29 05.oracle
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:31 06.ruby
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:31 07.specs
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:31 08.office
+drwxr-xr-x   4 junoyoshi  staff      136 11 13 17:34 09.tomcat
+-rw-r--r--@  1 junoyoshi  staff   930582  2  6 08:32 0から学ぶJava講座.pptx
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:35 10.eclipse
+drwxr-xr-x   3 root       staff      102 11 20 08:25 11.kindle
+drwxr-xr-x   3 junoyoshi  staff      102 12  6 08:32 12.browser.for.SQLite
+drwxr-xr-x   3 junoyoshi  staff      102 12 11 21:22 13.abobe
+drwxr-xr-x  14 junoyoshi  staff      476  1 23 08:28 14.BIH
+drwxr-xr-x   3 junoyoshi  staff      102  2  4 07:30 15.vagrant
+drwxr-xr-x   6 junoyoshi  staff      204  2  5 11:44 99.qwerty
+-rw-r--r--@  1 junoyoshi  staff  1847498  2  6 08:31 ゼロからのRails開発入門-1ヶ月で学べるアジャイル開発手法-.pptx
+-rw-r--r--@  1 junoyoshi  staff  3640259  2  6 08:40 オブジェクト指向設計実践ガイド要約.pdf
+jun-MacBook:Downloads junoyoshi$ ll
+total 12552
+drwxr-xr-x   9 junoyoshi  staff      306  2  4 07:31 01.virtualbox
+drwxr-xr-x   4 junoyoshi  staff      136 11 13 17:28 02.jdk
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:32 03.cyberduck
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:29 04.dropbox
+drwxr-xr-x   4 junoyoshi  staff      136 11 13 17:29 05.oracle
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:31 06.ruby
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:31 07.specs
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:31 08.office
+drwxr-xr-x   4 junoyoshi  staff      136 11 13 17:34 09.tomcat
+-rw-r--r--@  1 junoyoshi  staff   930582  2  6 08:32 0から学ぶJava講座.pptx
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:35 10.eclipse
+drwxr-xr-x   3 root       staff      102 11 20 08:25 11.kindle
+drwxr-xr-x   3 junoyoshi  staff      102 12  6 08:32 12.browser.for.SQLite
+drwxr-xr-x   3 junoyoshi  staff      102 12 11 21:22 13.abobe
+drwxr-xr-x  14 junoyoshi  staff      476  1 23 08:28 14.BIH
+drwxr-xr-x   3 junoyoshi  staff      102  2  4 07:30 15.vagrant
+drwxr-xr-x   6 junoyoshi  staff      204  2  5 11:44 99.qwerty
+-rw-r--r--@  1 junoyoshi  staff  1847498  2  6 08:31 ゼロからのRails開発入門-1ヶ月で学べるアジャイル開発手法-.pptx
+-rw-r--r--@  1 junoyoshi  staff  3640259  2  6 08:40 オブジェクト指向設計実践ガイド要約.pdf
+jun-MacBook:Downloads junoyoshi$
+jun-MacBook:Downloads junoyoshi$
+jun-MacBook:Downloads junoyoshi$
+jun-MacBook:Downloads junoyoshi$ ll
+total 12552
+drwxr-xr-x   9 junoyoshi  staff      306  2  4 07:31 01.virtualbox
+drwxr-xr-x   4 junoyoshi  staff      136 11 13 17:28 02.jdk
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:32 03.cyberduck
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:29 04.dropbox
+drwxr-xr-x   4 junoyoshi  staff      136 11 13 17:29 05.oracle
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:31 06.ruby
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:31 07.specs
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:31 08.office
+drwxr-xr-x   4 junoyoshi  staff      136 11 13 17:34 09.tomcat
+-rw-r--r--@  1 junoyoshi  staff   930582  2  6 08:32 0から学ぶJava講座.pptx
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:35 10.eclipse
+drwxr-xr-x   3 root       staff      102 11 20 08:25 11.kindle
+drwxr-xr-x   3 junoyoshi  staff      102 12  6 08:32 12.browser.for.SQLite
+drwxr-xr-x   3 junoyoshi  staff      102 12 11 21:22 13.abobe
+drwxr-xr-x  14 junoyoshi  staff      476  1 23 08:28 14.BIH
+drwxr-xr-x   3 junoyoshi  staff      102  2  4 07:30 15.vagrant
+drwxr-xr-x   6 junoyoshi  staff      204  2  5 11:44 99.qwerty
+-rw-r--r--@  1 junoyoshi  staff  1847498  2  6 08:31 ゼロからのRails開発入門-1ヶ月で学べるアジャイル開発手法-.pptx
+-rw-r--r--@  1 junoyoshi  staff  3640259  2  6 08:40 オブジェクト指向設計実践ガイド要約.pdf
+jun-MacBook:Downloads junoyoshi$
+jun-MacBook:Downloads junoyoshi$
+jun-MacBook:Downloads junoyoshi$ ll
+total 12552
+drwxr-xr-x   9 junoyoshi  staff      306  2  4 07:31 01.virtualbox
+drwxr-xr-x   4 junoyoshi  staff      136 11 13 17:28 02.jdk
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:32 03.cyberduck
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:29 04.dropbox
+drwxr-xr-x   4 junoyoshi  staff      136 11 13 17:29 05.oracle
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:31 06.ruby
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:31 07.specs
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:31 08.office
+drwxr-xr-x   4 junoyoshi  staff      136 11 13 17:34 09.tomcat
+-rw-r--r--@  1 junoyoshi  staff   930582  2  6 08:32 0から学ぶJava講座.pptx
+drwxr-xr-x   3 junoyoshi  staff      102 11 13 17:35 10.eclipse
+drwxr-xr-x   3 root       staff      102 11 20 08:25 11.kindle
+drwxr-xr-x   3 junoyoshi  staff      102 12  6 08:32 12.browser.for.SQLite
+drwxr-xr-x   3 junoyoshi  staff      102 12 11 21:22 13.abobe
+drwxr-xr-x  14 junoyoshi  staff      476  1 23 08:28 14.BIH
+drwxr-xr-x   3 junoyoshi  staff      102  2  4 07:30 15.vagrant
+drwxr-xr-x   6 junoyoshi  staff      204  2  5 11:44 99.qwerty
+-rw-r--r--@  1 junoyoshi  staff  1847498  2  6 08:31 ゼロからのRails開発入門-1ヶ月で学べるアジャイル開発手法-.pptx
+-rw-r--r--@  1 junoyoshi  staff  3640259  2  6 08:40 オブジェクト指向設計実践ガイド要約.pdf
+jun-MacBook:Downloads junoyoshi$
+jun-MacBook:Downloads junoyoshi$
+jun-MacBook:Downloads junoyoshi$
+jun-MacBook:Downloads junoyoshi$ pwd
+/Users/junoyoshi/Downloads
+jun-MacBook:Downloads junoyoshi$ ls
+01.virtualbox
+02.jdk
+03.cyberduck
+04.dropbox
+05.oracle
+06.ruby
+07.specs
+08.office
+09.tomcat
+0から学ぶJava講座.pptx
+10.eclipse
+11.kindle
+12.browser.for.SQLite
+13.abobe
+14.BIH
+15.vagrant
+99.qwerty
+ゼロからのRails開発入門-1ヶ月で学べるアジャイル開発手法-.pptx
+オブジェクト指向設計実践ガイド要約.pdf
+jun-MacBook:Downloads junoyoshi$
+jun-MacBook:Downloads junoyoshi$
+jun-MacBook:Downloads junoyoshi$
+jun-MacBook:Downloads junoyoshi$ cd
+jun-MacBook:~ junoyoshi$ cd Desktop/
+jun-MacBook:Desktop junoyoshi$ ls
+moge
+jun-MacBook:Desktop junoyoshi$
+jun-MacBook:Desktop junoyoshi$
+jun-MacBook:Desktop junoyoshi$
+jun-MacBook:Desktop junoyoshi$ cd moge/
+jun-MacBook:moge junoyoshi$ ls
+Books		java		python		shell		street_academy
+html		lenovox201_2	ruby		sql		vagrant
+html2		memo		rubyonrails	ssh		work
+jun-MacBook:moge junoyoshi$
+jun-MacBook:moge junoyoshi$
+jun-MacBook:moge junoyoshi$
+jun-MacBook:moge junoyoshi$ cd vagrant/
+jun-MacBook:vagrant junoyoshi$ ls
+2Gear.rb			Vagrantfile
+2koge.rb			centos65-x86_64-20140116.box
+2koge_refacted.rb		hoge.rb
+3koge.rb			koge.rb
+4gear.rb			moge.rb
+5gear.rb			pgdg-centos96-9.6-3.noarch.rpm
+Gear.rb
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$
+jun-MacBook:vagrant junoyoshi$ cd ..
+jun-MacBook:moge junoyoshi$ ls
+Books		java		python		shell		street_academy
+html		lenovox201_2	ruby		sql		vagrant
+html2		memo		rubyonrails	ssh		work
+jun-MacBook:moge junoyoshi$
+jun-MacBook:moge junoyoshi$
+jun-MacBook:moge junoyoshi$ cp -pr vagrant/ vagrant2
+jun-MacBook:moge junoyoshi$ cd vagrant
+jun-MacBook:vagrant junoyoshi$ cd ../vagrant2
+jun-MacBook:vagrant2 junoyoshi$ ls
+2Gear.rb			Vagrantfile
+2koge.rb			centos65-x86_64-20140116.box
+2koge_refacted.rb		hoge.rb
+3koge.rb			koge.rb
+4gear.rb			moge.rb
+5gear.rb			pgdg-centos96-9.6-3.noarch.rpm
+Gear.rb
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ vagrant box list
+centos6.5 (virtualbox, 0)
+jun-MacBook:vagrant2 junoyoshi$ vagrant box add piyo centos65-x86_64-20140116.box
+==> box: Box file was not detected as metadata. Adding it directly...
+==> box: Adding box 'piyo' (v0) for provider:
+    box: Unpacking necessary files from: file:///Users/junoyoshi/Desktop/moge/vagrant2/centos65-x86_64-20140116.box
+==> box: Successfully added box 'piyo' (v0) for 'virtualbox'!
+jun-MacBook:vagrant2 junoyoshi$ vagrant box list
+centos6.5 (virtualbox, 0)
+piyo      (virtualbox, 0)
+jun-MacBook:vagrant2 junoyoshi$ ls
+2Gear.rb			Vagrantfile
+2koge.rb			centos65-x86_64-20140116.box
+2koge_refacted.rb		hoge.rb
+3koge.rb			koge.rb
+4gear.rb			moge.rb
+5gear.rb			pgdg-centos96-9.6-3.noarch.rpm
+Gear.rb
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ ll
+total 573696
+-rw-r--r--  1 junoyoshi  staff        617  2  5 12:09 2Gear.rb
+-rw-r--r--  1 junoyoshi  staff        506  2  6 08:27 2koge.rb
+-rw-r--r--  1 junoyoshi  staff        405  2  6 08:29 2koge_refacted.rb
+-rw-r--r--  1 junoyoshi  staff        302  2  5 14:10 3koge.rb
+-rw-r--r--  1 junoyoshi  staff        624  2  5 14:45 4gear.rb
+-rw-r--r--  1 junoyoshi  staff        749  2  5 15:26 5gear.rb
+-rw-r--r--  1 junoyoshi  staff        347  2  5 12:02 Gear.rb
+-rw-r--r--@ 1 junoyoshi  staff       3369  2  5 10:47 Vagrantfile
+-rw-r--r--@ 1 junoyoshi  staff  293676266  2  5 11:01 centos65-x86_64-20140116.box
+-rw-r--r--@ 1 junoyoshi  staff        226  2  5 11:58 hoge.rb
+-rw-r--r--  1 junoyoshi  staff        237  2  6 08:10 koge.rb
+-rw-r--r--  1 junoyoshi  staff        219  2  5 12:56 moge.rb
+-rw-r--r--@ 1 junoyoshi  staff       4788  2  5 10:47 pgdg-centos96-9.6-3.noarch.rpm
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ grep vagrant_default_14 *
+jun-MacBook:vagrant2 junoyoshi$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+    default: Adapter 2: hostonly
+==> default: Forwarding ports...
+    default: 3000 (guest) => 3000 (host) (adapter 1)
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Remote connection disconnect. Retrying...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default:
+    default: Guest Additions Version: 4.3.6
+    default: VirtualBox Version: 5.1
+==> default: Setting hostname...
+==> default: Configuring and enabling network interfaces...
+==> default: Mounting shared folders...
+    default: /vagrant => /Users/junoyoshi/Desktop/moge/vagrant2
+    default: /home/vagrant/data => /Users/junoyoshi/Desktop/moge/vagrant2
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+jun-MacBook:vagrant2 junoyoshi$ vagrant halt
+==> default: Attempting graceful shutdown of VM...
+jun-MacBook:vagrant2 junoyoshi$ echo $?
+0
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ ll
+total 573696
+-rw-r--r--  1 junoyoshi  staff        617  2  5 12:09 2Gear.rb
+-rw-r--r--  1 junoyoshi  staff        506  2  6 08:27 2koge.rb
+-rw-r--r--  1 junoyoshi  staff        405  2  6 08:29 2koge_refacted.rb
+-rw-r--r--  1 junoyoshi  staff        302  2  5 14:10 3koge.rb
+-rw-r--r--  1 junoyoshi  staff        624  2  5 14:45 4gear.rb
+-rw-r--r--  1 junoyoshi  staff        749  2  5 15:26 5gear.rb
+-rw-r--r--  1 junoyoshi  staff        347  2  5 12:02 Gear.rb
+-rw-r--r--@ 1 junoyoshi  staff       3369  2  5 10:47 Vagrantfile
+-rw-r--r--@ 1 junoyoshi  staff  293676266  2  5 11:01 centos65-x86_64-20140116.box
+-rw-r--r--@ 1 junoyoshi  staff        226  2  5 11:58 hoge.rb
+-rw-r--r--  1 junoyoshi  staff        237  2  6 08:10 koge.rb
+-rw-r--r--  1 junoyoshi  staff        219  2  5 12:56 moge.rb
+-rw-r--r--@ 1 junoyoshi  staff       4788  2  5 10:47 pgdg-centos96-9.6-3.noarch.rpm
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ vagrant package piyo piyo.box
+The machine with the name 'piyo' was not found configured for
+this Vagrant environment.
+jun-MacBook:vagrant2 junoyoshi$ vagrant package piyo --output piyo.box
+The machine with the name 'piyo' was not found configured for
+this Vagrant environment.
+jun-MacBook:vagrant2 junoyoshi$ vagrant status
+Current machine states:
+
+default                   poweroff (virtualbox)
+
+The VM is powered off. To restart the VM, simply run `vagrant up`
+jun-MacBook:vagrant2 junoyoshi$ vagrant package default --output piyo.box
+==> default: Clearing any previously set forwarded ports...
+==> default: Exporting VM...
+==> default: Compressing package to: /Users/junoyoshi/Desktop/moge/vagrant2/piyo.box
+jun-MacBook:vagrant2 junoyoshi$ echo $?
+0
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ ll
+total 1591384
+-rw-r--r--  1 junoyoshi  staff        617  2  5 12:09 2Gear.rb
+-rw-r--r--  1 junoyoshi  staff        506  2  6 08:27 2koge.rb
+-rw-r--r--  1 junoyoshi  staff        405  2  6 08:29 2koge_refacted.rb
+-rw-r--r--  1 junoyoshi  staff        302  2  5 14:10 3koge.rb
+-rw-r--r--  1 junoyoshi  staff        624  2  5 14:45 4gear.rb
+-rw-r--r--  1 junoyoshi  staff        749  2  5 15:26 5gear.rb
+-rw-r--r--  1 junoyoshi  staff        347  2  5 12:02 Gear.rb
+-rw-r--r--@ 1 junoyoshi  staff       3369  2  5 10:47 Vagrantfile
+-rw-r--r--@ 1 junoyoshi  staff  293676266  2  5 11:01 centos65-x86_64-20140116.box
+-rw-r--r--@ 1 junoyoshi  staff        226  2  5 11:58 hoge.rb
+-rw-r--r--  1 junoyoshi  staff        237  2  6 08:10 koge.rb
+-rw-r--r--  1 junoyoshi  staff        219  2  5 12:56 moge.rb
+-rw-r--r--@ 1 junoyoshi  staff       4788  2  5 10:47 pgdg-centos96-9.6-3.noarch.rpm
+-rw-r--r--  1 junoyoshi  staff  521052812  2  9 05:45 piyo.box
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ vagrant box list
+centos6.5 (virtualbox, 0)
+piyo      (virtualbox, 0)
+jun-MacBook:vagrant2 junoyoshi$ vagrant box remove piyo
+Removing box 'piyo' (v0) with provider 'virtualbox'...
+jun-MacBook:vagrant2 junoyoshi$ echo $?
+0
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ vagrant box list
+centos6.5 (virtualbox, 0)
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ vagrant box add piyo piyo.box
+==> box: Box file was not detected as metadata. Adding it directly...
+==> box: Adding box 'piyo' (v0) for provider:
+    box: Unpacking necessary files from: file:///Users/junoyoshi/Desktop/moge/vagrant2/piyo.box
+==> box: Successfully added box 'piyo' (v0) for 'virtualbox'!
+jun-MacBook:vagrant2 junoyoshi$ echo $?
+0
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ vagrant box list
+centos6.5 (virtualbox, 0)
+piyo      (virtualbox, 0)
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ vagrant init piyo
+`Vagrantfile` already exists in this directory. Remove it before
+running `vagrant init`.
+jun-MacBook:vagrant2 junoyoshi$ mv Vagrantfile Vagrantfile_bk
+jun-MacBook:vagrant2 junoyoshi$ vagrant init piyo
+A `Vagrantfile` has been placed in this directory. You are now
+ready to `vagrant up` your first virtual environment! Please read
+the comments in the Vagrantfile as well as documentation on
+`vagrantup.com` for more information on using Vagrant.
+jun-MacBook:vagrant2 junoyoshi$ echo $?
+0
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default:
+    default: Guest Additions Version: 4.3.6
+    default: VirtualBox Version: 5.1
+==> default: Mounting shared folders...
+    default: /vagrant => /Users/junoyoshi/Desktop/moge/vagrant2
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+jun-MacBook:vagrant2 junoyoshi$ vagrant halt
+==> default: Attempting graceful shutdown of VM...
+jun-MacBook:vagrant2 junoyoshi$ ll
+total 1591392
+-rw-r--r--  1 junoyoshi  staff        617  2  5 12:09 2Gear.rb
+-rw-r--r--  1 junoyoshi  staff        506  2  6 08:27 2koge.rb
+-rw-r--r--  1 junoyoshi  staff        405  2  6 08:29 2koge_refacted.rb
+-rw-r--r--  1 junoyoshi  staff        302  2  5 14:10 3koge.rb
+-rw-r--r--  1 junoyoshi  staff        624  2  5 14:45 4gear.rb
+-rw-r--r--  1 junoyoshi  staff        749  2  5 15:26 5gear.rb
+-rw-r--r--  1 junoyoshi  staff        347  2  5 12:02 Gear.rb
+-rw-r--r--  1 junoyoshi  staff       3008  2  9 05:47 Vagrantfile
+-rw-r--r--@ 1 junoyoshi  staff       3369  2  5 10:47 Vagrantfile_bk
+-rw-r--r--@ 1 junoyoshi  staff  293676266  2  5 11:01 centos65-x86_64-20140116.box
+-rw-r--r--@ 1 junoyoshi  staff        226  2  5 11:58 hoge.rb
+-rw-r--r--  1 junoyoshi  staff        237  2  6 08:10 koge.rb
+-rw-r--r--  1 junoyoshi  staff        219  2  5 12:56 moge.rb
+-rw-r--r--@ 1 junoyoshi  staff       4788  2  5 10:47 pgdg-centos96-9.6-3.noarch.rpm
+-rw-r--r--  1 junoyoshi  staff  521052812  2  9 05:45 piyo.box
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ rm piyo.box
+jun-MacBook:vagrant2 junoyoshi$ rm -rf *
+jun-MacBook:vagrant2 junoyoshi$ ll
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ rm -rf .*
+rm: "." and ".." may not be removed
+jun-MacBook:vagrant2 junoyoshi$ ll
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ cd ..
+jun-MacBook:moge junoyoshi$
+jun-MacBook:moge junoyoshi$
+jun-MacBook:moge junoyoshi$ rmdir vagrant2
+jun-MacBook:moge junoyoshi$ mkdir vagrant2
+jun-MacBook:moge junoyoshi$ cd vagrant2
+jun-MacBook:vagrant2 junoyoshi$ ll
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ touch moge
+jun-MacBook:vagrant2 junoyoshi$ ll
+total 0
+-rw-r--r--  1 junoyoshi  staff  0  2  9 06:01 moge
+jun-MacBook:vagrant2 junoyoshi$ ping 10.0.2.15
+PING 10.0.2.15 (10.0.2.15): 56 data bytes
+Request timeout for icmp_seq 0
+Request timeout for icmp_seq 1
+Request timeout for icmp_seq 2
+Request timeout for icmp_seq 3
+36 bytes from 118.23.16.193: Communication prohibited by filter
+Vr HL TOS  Len   ID Flg  off TTL Pro  cks      Src      Dst
+ 4  5  00 5400 0fe1   0 0000  3d  01 a107 192.168.0.10  10.0.2.15
+
+Request timeout for icmp_seq 4
+36 bytes from 118.23.16.193: Communication prohibited by filter
+Vr HL TOS  Len   ID Flg  off TTL Pro  cks      Src      Dst
+ 4  5  00 5400 984c   0 0000  3d  01 189c 192.168.0.10  10.0.2.15
+
+Request timeout for icmp_seq 5
+Request timeout for icmp_seq 6
+36 bytes from 118.23.16.193: Communication prohibited by filter
+Vr HL TOS  Len   ID Flg  off TTL Pro  cks      Src      Dst
+ 4  5  00 5400 323d   0 0000  3d  01 7eab 192.168.0.10  10.0.2.15
+
+Request timeout for icmp_seq 7
+Request timeout for icmp_seq 8
+36 bytes from 118.23.16.193: Communication prohibited by filter
+Vr HL TOS  Len   ID Flg  off TTL Pro  cks      Src      Dst
+ 4  5  00 5400 caca   0 0000  3d  01 e61d 192.168.0.10  10.0.2.15
+
+Request timeout for icmp_seq 9
+Request timeout for icmp_seq 10
+36 bytes from 118.23.16.193: Communication prohibited by filter
+Vr HL TOS  Len   ID Flg  off TTL Pro  cks      Src      Dst
+ 4  5  00 5400 4930   0 0000  3d  01 67b8 192.168.0.10  10.0.2.15
+
+Request timeout for icmp_seq 11
+Request timeout for icmp_seq 12
+Request timeout for icmp_seq 13
+Request timeout for icmp_seq 14
+36 bytes from 118.23.16.193: Communication prohibited by filter
+Vr HL TOS  Len   ID Flg  off TTL Pro  cks      Src      Dst
+ 4  5  00 5400 d8f8   0 0000  3d  01 d7ef 192.168.0.10  10.0.2.15
+
+Request timeout for icmp_seq 15
+Request timeout for icmp_seq 16
+36 bytes from 118.23.16.193: Communication prohibited by filter
+Vr HL TOS  Len   ID Flg  off TTL Pro  cks      Src      Dst
+ 4  5  00 5400 bd35   0 0000  3d  01 f3b2 192.168.0.10  10.0.2.15
+
+^C
+--- 10.0.2.15 ping statistics ---
+18 packets transmitted, 0 packets received, 100.0% packet loss
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ ping 10.0.2.15
+PING 10.0.2.15 (10.0.2.15): 56 data bytes
+Request timeout for icmp_seq 0
+Request timeout for icmp_seq 1
+36 bytes from 118.23.16.193: Communication prohibited by filter
+Vr HL TOS  Len   ID Flg  off TTL Pro  cks      Src      Dst
+ 4  5  00 5400 416f   0 0000  3d  01 6f79 192.168.0.10  10.0.2.15
+
+Request timeout for icmp_seq 2
+Request timeout for icmp_seq 3
+Request timeout for icmp_seq 4
+Request timeout for icmp_seq 5
+^C
+--- 10.0.2.15 ping statistics ---
+7 packets transmitted, 0 packets received, 100.0% packet loss
+jun-MacBook:vagrant2 junoyoshi$ netstat -r
+Routing tables
+
+Internet:
+Destination        Gateway            Flags        Refs      Use   Netif Expire
+default            192.168.0.1        UGSc          215       25     en0
+127                localhost          UCS             1        0     lo0
+localhost          localhost          UH              2    65437     lo0
+192.168.0          link#4             UCS             2        0     en0
+192.168.0.1/32     link#4             UCS             2        0     en0
+192.168.0.1        0:1b:8b:9e:90:3a   UHLWIir       222     1128     en0    643
+192.168.0.10/32    link#4             UCS             1        0     en0
+192.168.0.255      link#4             UHLWbI          1      134     en0
+192.168.33         link#9             UC              4        0 vboxnet
+192.168.33.13      8:0:27:92:f6:15    UHLWIi          1        0 vboxnet
+192.168.33.255     link#9             UHLWbI          1      134 vboxnet
+224.0.0/4          link#4             UmCS            3        0     en0
+224.0.0.251        1:0:5e:0:0:fb      UHmLWI          1        0     en0
+239.255.255.250    1:0:5e:7f:ff:fa    UHmLWI          1       80     en0
+255.255.255.255/32 link#4             UCS             2        0     en0
+broadcasthost      link#4             UHLWbI          1       72     en0
+
+Internet6:
+Destination        Gateway            Flags         Netif Expire
+default            fe80::c664:13ff:fe UGc             en0
+default            fe80::%utun0       UGcI          utun0
+default            fe80::%utun1       UGcI          utun1
+localhost          localhost          UHL             lo0
+2408:210:8da7:5400 link#4             UC              en0
+2408:210:8da7:5400 f4:f:24:5:23:54    UHL             lo0
+2408:210:8da7:5400 f4:f:24:5:23:54    UHL             lo0
+fe80::%lo0         fe80::1%lo0        UcI             lo0
+fe80::1%lo0        link#1             UHLI            lo0
+^C
+jun-MacBook:vagrant2 junoyoshi$ ifconfig
+lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 16384
+	options=1203<RXCSUM,TXCSUM,TXSTATUS,SW_TIMESTAMP>
+	inet 127.0.0.1 netmask 0xff000000
+	inet6 ::1 prefixlen 128
+	inet6 fe80::1%lo0 prefixlen 64 scopeid 0x1
+	nd6 options=201<PERFORMNUD,DAD>
+gif0: flags=8010<POINTOPOINT,MULTICAST> mtu 1280
+stf0: flags=0<> mtu 1280
+en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	ether f4:0f:24:05:23:54
+	inet6 fe80::413:6c1f:1048:3c99%en0 prefixlen 64 secured scopeid 0x4
+	inet 192.168.0.10 netmask 0xffffff00 broadcast 192.168.0.255
+	inet6 2408:210:8da7:5400:408:b3d9:c351:2e24 prefixlen 64 autoconf secured
+	inet6 2408:210:8da7:5400:6558:6dc0:5952:ff24 prefixlen 64 autoconf temporary
+	nd6 options=201<PERFORMNUD,DAD>
+	media: autoselect
+	status: active
+p2p0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> mtu 2304
+	ether 06:0f:24:05:23:54
+	media: autoselect
+	status: inactive
+awdl0: flags=8943<UP,BROADCAST,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1484
+	ether 66:17:fa:9a:74:24
+	inet6 fe80::6417:faff:fe9a:7424%awdl0 prefixlen 64 scopeid 0x6
+	nd6 options=201<PERFORMNUD,DAD>
+	media: autoselect
+	status: active
+utun0: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 2000
+	inet6 fe80::aedb:7f64:8769:3843%utun0 prefixlen 64 scopeid 0x7
+	nd6 options=201<PERFORMNUD,DAD>
+vboxnet0: flags=8943<UP,BROADCAST,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
+	ether 0a:00:27:00:00:00
+	inet 192.168.33.1 netmask 0xffffff00 broadcast 192.168.33.255
+utun1: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1380
+	inet6 fe80::2227:3202:f360:6aa2%utun1 prefixlen 64 scopeid 0x8
+	nd6 options=201<PERFORMNUD,DAD>
+jun-MacBook:vagrant2 junoyoshi$ route add
+route: must be root to alter routing table
+jun-MacBook:vagrant2 junoyoshi$ su -
+Password:
+jun-MacBook:~ root#
+jun-MacBook:~ root#
+jun-MacBook:~ root# route add
+route: writing to routing socket: Invalid argument
+add net : Invalid argument
+jun-MacBook:~ root# exit
+logout
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ VBoxManage start piyo --headless
+Oracle VM VirtualBox Command Line Management Interface Version 5.1.14
+(C) 2005-2017 Oracle Corporation
+All rights reserved.
+
+Usage:
+
+  VBoxManage [<general option>] <command>
+
+
+General Options:
+
+  [-v|--version]            print version number and exit
+  [-q|--nologo]             suppress the logo
+  [--settingspw <pw>]       provide the settings password
+  [--settingspwfile <file>] provide a file containing the settings password
+
+
+Commands:
+
+  list [--long|-l]          vms|runningvms|ostypes|hostdvds|hostfloppies|
+                            intnets|bridgedifs|hostonlyifs|natnets|dhcpservers|
+                            hostinfo|hostcpuids|hddbackends|hdds|dvds|floppies|
+                            usbhost|usbfilters|systemproperties|extpacks|
+                            groups|webcams|screenshotformats
+
+  showvminfo                <uuid|vmname> [--details]
+                            [--machinereadable]
+  showvminfo                <uuid|vmname> --log <idx>
+
+  registervm                <filename>
+
+  unregistervm              <uuid|vmname> [--delete]
+
+  createvm                  --name <name>
+                            [--groups <group>, ...]
+                            [--ostype <ostype>]
+                            [--register]
+                            [--basefolder <path>]
+                            [--uuid <uuid>]
+
+  modifyvm                  <uuid|vmname>
+                            [--name <name>]
+                            [--groups <group>, ...]
+                            [--description <desc>]
+                            [--ostype <ostype>]
+                            [--iconfile <filename>]
+                            [--memory <memorysize in MB>]
+                            [--pagefusion on|off]
+                            [--vram <vramsize in MB>]
+                            [--acpi on|off]
+                            [--pciattach 03:04.0]
+                            [--pciattach 03:04.0@02:01.0]
+                            [--pcidetach 03:04.0]
+                            [--ioapic on|off]
+                            [--hpet on|off]
+                            [--triplefaultreset on|off]
+                            [--apic on|off]
+                            [--x2apic on|off]
+                            [--paravirtprovider none|default|legacy|minimal|
+                                                hyperv|kvm]
+                            [--paravirtdebug <key=value> [,<key=value> ...]]
+                            [--hwvirtex on|off]
+                            [--nestedpaging on|off]
+                            [--largepages on|off]
+                            [--vtxvpid on|off]
+                            [--vtxux on|off]
+                            [--pae on|off]
+                            [--longmode on|off]
+                            [--cpu-profile "host|Intel 80[86|286|386]"]
+                            [--cpuid-portability-level <0..3>
+                            [--cpuidset <leaf> <eax> <ebx> <ecx> <edx>]
+                            [--cpuidremove <leaf>]
+                            [--cpuidremoveall]
+                            [--hardwareuuid <uuid>]
+                            [--cpus <number>]
+                            [--cpuhotplug on|off]
+                            [--plugcpu <id>]
+                            [--unplugcpu <id>]
+                            [--cpuexecutioncap <1-100>]
+                            [--rtcuseutc on|off]
+                            [--graphicscontroller none|vboxvga|vmsvga]
+                            [--monitorcount <number>]
+                            [--accelerate3d on|off]
+                            [--accelerate2dvideo on|off]
+                            [--firmware bios|efi|efi32|efi64]
+                            [--chipset ich9|piix3]
+                            [--bioslogofadein on|off]
+                            [--bioslogofadeout on|off]
+                            [--bioslogodisplaytime <msec>]
+                            [--bioslogoimagepath <imagepath>]
+                            [--biosbootmenu disabled|menuonly|messageandmenu]
+                            [--biosapic disabled|apic|x2apic]
+                            [--biossystemtimeoffset <msec>]
+                            [--biospxedebug on|off]
+                            [--boot<1-4> none|floppy|dvd|disk|net>]
+                            [--nic<1-N> none|null|nat|bridged|intnet|hostonly|
+                                        generic|natnetwork]
+                            [--nictype<1-N> Am79C970A|Am79C973|
+                                            82540EM|82543GC|82545EM|
+                                            virtio]
+                            [--cableconnected<1-N> on|off]
+                            [--nictrace<1-N> on|off]
+                            [--nictracefile<1-N> <filename>]
+                            [--nicproperty<1-N> name=[value]]
+                            [--nicspeed<1-N> <kbps>]
+                            [--nicbootprio<1-N> <priority>]
+                            [--nicpromisc<1-N> deny|allow-vms|allow-all]
+                            [--nicbandwidthgroup<1-N> none|<name>]
+                            [--bridgeadapter<1-N> none|<devicename>]
+                            [--hostonlyadapter<1-N> none|<devicename>]
+                            [--intnet<1-N> <network name>]
+                            [--nat-network<1-N> <network name>]
+                            [--nicgenericdrv<1-N> <driver>
+                            [--natnet<1-N> <network>|default]
+                            [--natsettings<1-N> [<mtu>],[<socksnd>],
+                                                [<sockrcv>],[<tcpsnd>],
+                                                [<tcprcv>]]
+                            [--natpf<1-N> [<rulename>],tcp|udp,[<hostip>],
+                                          <hostport>,[<guestip>],<guestport>]
+                            [--natpf<1-N> delete <rulename>]
+                            [--nattftpprefix<1-N> <prefix>]
+                            [--nattftpfile<1-N> <file>]
+                            [--nattftpserver<1-N> <ip>]
+                            [--natbindip<1-N> <ip>
+                            [--natdnspassdomain<1-N> on|off]
+                            [--natdnsproxy<1-N> on|off]
+                            [--natdnshostresolver<1-N> on|off]
+                            [--nataliasmode<1-N> default|[log],[proxyonly],
+                                                         [sameports]]
+                            [--macaddress<1-N> auto|<mac>]
+                            [--mouse ps2|usb|usbtablet|usbmultitouch]
+                            [--keyboard ps2|usb
+                            [--uart<1-N> off|<I/O base> <IRQ>]
+                            [--uartmode<1-N> disconnected|
+                                             server <pipe>|
+                                             client <pipe>|
+                                             tcpserver <port>|
+                                             tcpclient <hostname:port>|
+                                             file <file>|
+                                             <devicename>]
+                            [--guestmemoryballoon <balloonsize in MB>]
+                            [--audio none|null|coreaudio]
+                            [--audiocontroller ac97|hda|sb16]
+                            [--audiocodec stac9700|ad1980|stac9221|sb16]
+                            [--clipboard disabled|hosttoguest|guesttohost|
+                                         bidirectional]
+                            [--draganddrop disabled|hosttoguest]
+                            [--vrde on|off]
+                            [--vrdeextpack default|<name>
+                            [--vrdeproperty <name=[value]>]
+                            [--vrdeport <hostport>]
+                            [--vrdeaddress <hostip>]
+                            [--vrdeauthtype null|external|guest]
+                            [--vrdeauthlibrary default|<name>
+                            [--vrdemulticon on|off]
+                            [--vrdereusecon on|off]
+                            [--vrdevideochannel on|off]
+                            [--vrdevideochannelquality <percent>]
+                            [--usb on|off]
+                            [--usbehci on|off]
+                            [--usbxhci on|off]
+                            [--usbrename <oldname> <newname>]
+                            [--snapshotfolder default|<path>]
+                            [--teleporter on|off]
+                            [--teleporterport <port>]
+                            [--teleporteraddress <address|empty>
+                            [--teleporterpassword <password>]
+                            [--teleporterpasswordfile <file>|stdin]
+                            [--tracing-enabled on|off]
+                            [--tracing-config <config-string>]
+                            [--tracing-allow-vm-access on|off]
+                            [--usbcardreader on|off]
+                            [--autostart-enabled on|off]
+                            [--autostart-delay <seconds>]
+                            [--videocap on|off]
+                            [--videocapscreens all|<screen ID> [<screen ID> ...]]
+                            [--videocapfile <filename>]
+                            [--videocapres <width> <height>]
+                            [--videocaprate <rate>]
+                            [--videocapfps <fps>]
+                            [--videocapmaxtime <ms>]
+                            [--videocapmaxsize <MB>]
+                            [--videocapopts <key=value> [,<key=value> ...]]
+                            [--defaultfrontend default|<name>]
+
+  clonevm                   <uuid|vmname>
+                            [--snapshot <uuid>|<name>]
+                            [--mode machine|machineandchildren|all]
+                            [--options link|keepallmacs|keepnatmacs|
+                                       keepdisknames]
+                            [--name <name>]
+                            [--groups <group>, ...]
+                            [--basefolder <basefolder>]
+                            [--uuid <uuid>]
+                            [--register]
+
+  import                    <ovfname/ovaname>
+                            [--dry-run|-n]
+                            [--options keepallmacs|keepnatmacs|importtovdi]
+                            [more options]
+                            (run with -n to have options displayed
+                             for a particular OVF)
+
+  export                    <machines> --output|-o <name>.<ovf/ova>
+                            [--legacy09|--ovf09|--ovf10|--ovf20]
+                            [--manifest]
+                            [--iso]
+                            [--options manifest|iso|nomacs|nomacsbutnat]
+                            [--vsys <number of virtual system>]
+                                    [--product <product name>]
+                                    [--producturl <product url>]
+                                    [--vendor <vendor name>]
+                                    [--vendorurl <vendor url>]
+                                    [--version <version info>]
+                                    [--description <description info>]
+                                    [--eula <license text>]
+                                    [--eulafile <filename>]
+
+  startvm                   <uuid|vmname>...
+                            [--type gui|headless|separate]
+
+  controlvm                 <uuid|vmname>
+                            pause|resume|reset|poweroff|savestate|
+                            acpipowerbutton|acpisleepbutton|
+                            keyboardputscancode <hex> [<hex> ...]|
+                            setlinkstate<1-N> on|off |
+                            nic<1-N> null|nat|bridged|intnet|hostonly|generic|
+                                     natnetwork [<devicename>] |
+                            nictrace<1-N> on|off |
+                            nictracefile<1-N> <filename> |
+                            nicproperty<1-N> name=[value] |
+                            nicpromisc<1-N> deny|allow-vms|allow-all |
+                            natpf<1-N> [<rulename>],tcp|udp,[<hostip>],
+                                        <hostport>,[<guestip>],<guestport> |
+                            natpf<1-N> delete <rulename> |
+                            guestmemoryballoon <balloonsize in MB> |
+                            usbattach <uuid>|<address>
+                                      [--capturefile <filename>] |
+                            usbdetach <uuid>|<address> |
+                            clipboard disabled|hosttoguest|guesttohost|
+                                      bidirectional |
+                            draganddrop disabled|hosttoguest |
+                            vrde on|off |
+                            vrdeport <port> |
+                            vrdeproperty <name=[value]> |
+                            vrdevideochannelquality <percent> |
+                            setvideomodehint <xres> <yres> <bpp>
+                                            [[<display>] [<enabled:yes|no> |
+                                              [<xorigin> <yorigin>]]] |
+                            screenshotpng <file> [display] |
+                            videocap on|off |
+                            videocapscreens all|none|<screen>,[<screen>...] |
+                            videocapfile <file>
+                            videocapres <width>x<height>
+                            videocaprate <rate>
+                            videocapfps <fps>
+                            videocapmaxtime <ms>
+                            videocapmaxsize <MB>
+                            setcredentials <username>
+                                           --passwordfile <file> | <password>
+                                           <domain>
+                                           [--allowlocallogon <yes|no>] |
+                            teleport --host <name> --port <port>
+                                     [--maxdowntime <msec>]
+                                     [--passwordfile <file> |
+                                      --password <password>] |
+                            plugcpu <id> |
+                            unplugcpu <id> |
+                            cpuexecutioncap <1-100>
+                            webcam <attach [path [settings]]> | <detach [path]> | <list>
+                            addencpassword <id>
+                                           <password file>|-
+                                           [--removeonsuspend <yes|no>]
+                            removeencpassword <id>
+                            removeallencpasswords
+
+  discardstate              <uuid|vmname>
+
+  adoptstate                <uuid|vmname> <state_file>
+
+  snapshot                  <uuid|vmname>
+                            take <name> [--description <desc>] [--live]
+                                 [--uniquename Number,Timestamp,Space,Force] |
+                            delete <uuid|snapname> |
+                            restore <uuid|snapname> |
+                            restorecurrent |
+                            edit <uuid|snapname>|--current
+                                 [--name <name>]
+                                 [--description <desc>] |
+                            list [--details|--machinereadable]
+                            showvminfo <uuid|snapname>
+
+  closemedium               [disk|dvd|floppy] <uuid|filename>
+                            [--delete]
+
+  storageattach             <uuid|vmname>
+                            --storagectl <name>
+                            [--port <number>]
+                            [--device <number>]
+                            [--type dvddrive|hdd|fdd]
+                            [--medium none|emptydrive|additions|
+                                      <uuid|filename>|host:<drive>|iscsi]
+                            [--mtype normal|writethrough|immutable|shareable|
+                                     readonly|multiattach]
+                            [--comment <text>]
+                            [--setuuid <uuid>]
+                            [--setparentuuid <uuid>]
+                            [--passthrough on|off]
+                            [--tempeject on|off]
+                            [--nonrotational on|off]
+                            [--discard on|off]
+                            [--hotpluggable on|off]
+                            [--bandwidthgroup <name>]
+                            [--forceunmount]
+                            [--server <name>|<ip>]
+                            [--target <target>]
+                            [--tport <port>]
+                            [--lun <lun>]
+                            [--encodedlun <lun>]
+                            [--username <username>]
+                            [--password <password>]
+                            [--initiator <initiator>]
+                            [--intnet]
+
+  storagectl                <uuid|vmname>
+                            --name <name>
+                            [--add ide|sata|scsi|floppy|sas|usb|pcie]
+                            [--controller LSILogic|LSILogicSAS|BusLogic|
+                                          IntelAHCI|PIIX3|PIIX4|ICH6|I82078|
+                            [             USB|NVMe]
+                            [--portcount <1-n>]
+                            [--hostiocache on|off]
+                            [--bootable on|off]
+                            [--rename <name>]
+                            [--remove]
+
+  bandwidthctl              <uuid|vmname>
+                            add <name> --type disk|network
+                                --limit <megabytes per second>[k|m|g|K|M|G] |
+                            set <name>
+                                --limit <megabytes per second>[k|m|g|K|M|G] |
+                            remove <name> |
+                            list [--machinereadable]
+                            (limit units: k=kilobit, m=megabit, g=gigabit,
+                                          K=kilobyte, M=megabyte, G=gigabyte)
+
+  showmediuminfo            [disk|dvd|floppy] <uuid|filename>
+
+  createmedium              [disk|dvd|floppy] --filename <filename>
+                            [--size <megabytes>|--sizebyte <bytes>]
+                            [--diffparent <uuid>|<filename>
+                            [--format VDI|VMDK|VHD] (default: VDI)
+                            [--variant Standard,Fixed,Split2G,Stream,ESX]
+
+  modifymedium              [disk|dvd|floppy] <uuid|filename>
+                            [--type normal|writethrough|immutable|shareable|
+                                    readonly|multiattach]
+                            [--autoreset on|off]
+                            [--property <name=[value]>]
+                            [--compact]
+                            [--resize <megabytes>|--resizebyte <bytes>]
+                            [--move <full path to a new location>]
+  clonemedium               [disk|dvd|floppy] <uuid|inputfile> <uuid|outputfile>
+                            [--format VDI|VMDK|VHD|RAW|<other>]
+                            [--variant Standard,Fixed,Split2G,Stream,ESX]
+                            [--existing]
+
+  mediumproperty            [disk|dvd|floppy] set <uuid|filename>
+                            <property> <value>
+
+                            [disk|dvd|floppy] get <uuid|filename>
+                            <property>
+
+                            [disk|dvd|floppy] delete <uuid|filename>
+                            <property>
+
+  encryptmedium             <uuid|filename>
+                            [--newpassword <file>|-]
+                            [--oldpassword <file>|-]
+                            [--cipher <cipher identifier>]
+                            [--newpasswordid <password identifier>]
+
+  checkmediumpwd            <uuid|filename>
+                            <pwd file>|-
+
+  convertfromraw            <filename> <outputfile>
+                            [--format VDI|VMDK|VHD]
+                            [--variant Standard,Fixed,Split2G,Stream,ESX]
+                            [--uuid <uuid>]
+  convertfromraw            stdin <outputfile> <bytes>
+                            [--format VDI|VMDK|VHD]
+                            [--variant Standard,Fixed,Split2G,Stream,ESX]
+                            [--uuid <uuid>]
+
+  getextradata              global|<uuid|vmname>
+                            <key>|enumerate
+
+  setextradata              global|<uuid|vmname>
+                            <key>
+                            [<value>] (no value deletes key)
+
+  setproperty               machinefolder default|<folder> |
+                            hwvirtexclusive on|off |
+                            vrdeauthlibrary default|<library> |
+                            websrvauthlibrary default|null|<library> |
+                            vrdeextpack null|<library> |
+                            autostartdbpath null|<folder> |
+                            loghistorycount <value>
+                            defaultfrontend default|<name>
+                            logginglevel <log setting>
+
+  usbfilter                 add <index,0-N>
+                            --target <uuid|vmname>|global
+                            --name <string>
+                            --action ignore|hold (global filters only)
+                            [--active yes|no] (yes)
+                            [--vendorid <XXXX>] (null)
+                            [--productid <XXXX>] (null)
+                            [--revision <IIFF>] (null)
+                            [--manufacturer <string>] (null)
+                            [--product <string>] (null)
+                            [--remote yes|no] (null, VM filters only)
+                            [--serialnumber <string>] (null)
+                            [--maskedinterfaces <XXXXXXXX>]
+
+  usbfilter                 modify <index,0-N>
+                            --target <uuid|vmname>|global
+                            [--name <string>]
+                            [--action ignore|hold] (global filters only)
+                            [--active yes|no]
+                            [--vendorid <XXXX>|""]
+                            [--productid <XXXX>|""]
+                            [--revision <IIFF>|""]
+                            [--manufacturer <string>|""]
+                            [--product <string>|""]
+                            [--remote yes|no] (null, VM filters only)
+                            [--serialnumber <string>|""]
+                            [--maskedinterfaces <XXXXXXXX>]
+
+  usbfilter                 remove <index,0-N>
+                            --target <uuid|vmname>|global
+
+  sharedfolder              add <uuid|vmname>
+                            --name <name> --hostpath <hostpath>
+                            [--transient] [--readonly] [--automount]
+
+  sharedfolder              remove <uuid|vmname>
+                            --name <name> [--transient]
+
+  guestproperty             get <uuid|vmname>
+                            <property> [--verbose]
+
+  guestproperty             set <uuid|vmname>
+                            <property> [<value> [--flags <flags>]]
+
+  guestproperty             delete|unset <uuid|vmname>
+                            <property>
+
+  guestproperty             enumerate <uuid|vmname>
+                            [--patterns <patterns>]
+
+  guestproperty             wait <uuid|vmname> <patterns>
+                            [--timeout <msec>] [--fail-on-timeout]
+
+  guestcontrol              <uuid|vmname> [--verbose|-v] [--quiet|-q]
+                              [--username <name>] [--domain <domain>]
+                              [--passwordfile <file> | --password <password>]
+
+                              run [common-options]
+                              [--exe <path to executable>] [--timeout <msec>]
+                              [-E|--putenv <NAME>[=<VALUE>]] [--unquoted-args]
+                              [--ignore-operhaned-processes] [--profile]
+                              [--no-wait-stdout|--wait-stdout]
+                              [--no-wait-stderr|--wait-stderr]
+                              [--dos2unix] [--unix2dos]
+                              -- <program/arg0> [argument1] ... [argumentN]]
+
+                              start [common-options]
+                              [--exe <path to executable>] [--timeout <msec>]
+                              [-E|--putenv <NAME>[=<VALUE>]] [--unquoted-args]
+                              [--ignore-operhaned-processes] [--profile]
+                              -- <program/arg0> [argument1] ... [argumentN]]
+
+                              copyfrom [common-options]
+                              [--dryrun] [--follow] [-R|--recursive]
+                              <guest-src0> [guest-src1 [...]] <host-dst>
+
+                              copyfrom [common-options]
+                              [--dryrun] [--follow] [-R|--recursive]
+                              [--target-directory <host-dst-dir>]
+                              <guest-src0> [guest-src1 [...]]
+
+                              copyto [common-options]
+                              [--dryrun] [--follow] [-R|--recursive]
+                              <host-src0> [host-src1 [...]] <guest-dst>
+
+                              copyto [common-options]
+                              [--dryrun] [--follow] [-R|--recursive]
+                              [--target-directory <guest-dst>]
+                              <host-src0> [host-src1 [...]]
+
+                              mkdir|createdir[ectory] [common-options]
+                              [--parents] [--mode <mode>]
+                              <guest directory> [...]
+
+                              rmdir|removedir[ectory] [common-options]
+                              [-R|--recursive]
+                              <guest directory> [...]
+
+                              removefile|rm [common-options] [-f|--force]
+                              <guest file> [...]
+
+                              mv|move|ren[ame] [common-options]
+                              <source> [source1 [...]] <dest>
+
+                              mktemp|createtemp[orary] [common-options]
+                              [--secure] [--mode <mode>] [--tmpdir <directory>]
+                              <template>
+
+                              stat [common-options]
+                              <file> [...]
+
+  guestcontrol              <uuid|vmname> [--verbose|-v] [--quiet|-q]
+
+                              list <all|sessions|processes|files> [common-opts]
+
+                              closeprocess [common-options]
+                              <   --session-id <ID>
+                                | --session-name <name or pattern>
+                              <PID1> [PID1 [...]]
+
+                              closesession [common-options]
+                              <  --all | --session-id <ID>
+                                | --session-name <name or pattern> >
+
+                              updatega|updateguestadditions|updateadditions
+                              [--source <guest additions .ISO>]
+                              [--wait-start] [common-options]
+                              [-- [<argument1>] ... [<argumentN>]]
+
+                              watch [common-options]
+
+  metrics                   list [*|host|<vmname> [<metric_list>]]
+                                                 (comma-separated)
+
+  metrics                   setup
+                            [--period <seconds>] (default: 1)
+                            [--samples <count>] (default: 1)
+                            [--list]
+                            [*|host|<vmname> [<metric_list>]]
+
+  metrics                   query [*|host|<vmname> [<metric_list>]]
+
+  metrics                   enable
+                            [--list]
+                            [*|host|<vmname> [<metric_list>]]
+
+  metrics                   disable
+                            [--list]
+                            [*|host|<vmname> [<metric_list>]]
+
+  metrics                   collect
+                            [--period <seconds>] (default: 1)
+                            [--samples <count>] (default: 1)
+                            [--list]
+                            [--detach]
+                            [*|host|<vmname> [<metric_list>]]
+
+  natnetwork                add --netname <name>
+                            --network <network>
+                            [--enable|--disable]
+                            [--dhcp on|off]
+                            [--port-forward-4 <rule>]
+                            [--loopback-4 <rule>]
+                            [--ipv6 on|off]
+                            [--port-forward-6 <rule>]
+                            [--loopback-6 <rule>]
+
+  natnetwork                remove --netname <name>
+
+  natnetwork                modify --netname <name>
+                            [--network <network>]
+                            [--enable|--disable]
+                            [--dhcp on|off]
+                            [--port-forward-4 <rule>]
+                            [--loopback-4 <rule>]
+                            [--ipv6 on|off]
+                            [--port-forward-6 <rule>]
+                            [--loopback-6 <rule>]
+
+  natnetwork                start --netname <name>
+
+  natnetwork                stop --netname <name>
+
+  natnetwork                list [<pattern>]
+
+  hostonlyif                ipconfig <name>
+                            [--dhcp |
+                            --ip<ipv4> [--netmask<ipv4> (def: 255.255.255.0)] |
+                            --ipv6<ipv6> [--netmasklengthv6<length> (def: 64)]]
+                            create |
+                            remove <name>
+
+  dhcpserver                add|modify --netname <network_name> |
+                                       --ifname <hostonly_if_name>
+                            [--ip <ip_address>
+                            --netmask <network_mask>
+                            --lowerip <lower_ip>
+                            --upperip <upper_ip>]
+                            [--enable | --disable]
+
+  dhcpserver                remove --netname <network_name> |
+                                   --ifname <hostonly_if_name>
+
+  usbdevsource              add <source name>
+                            --backend <backend>
+                            --address <address>
+  usbdevsource              remove <source name>
+
+ Introspection and guest debugging:
+  VBoxManage debugvm <uuid|vmname> dumpvmcore [--filename=name]
+  VBoxManage debugvm <uuid|vmname> info <item> [args...]
+  VBoxManage debugvm <uuid|vmname> injectnmi
+  VBoxManage debugvm <uuid|vmname> log [[--release] | [--debug]]
+      [group-settings...]
+  VBoxManage debugvm <uuid|vmname> logdest [[--release] | [--debug]]
+      [destinations...]
+  VBoxManage debugvm <uuid|vmname> logflags [[--release] | [--debug]] [flags...]
+  VBoxManage debugvm <uuid|vmname> osdetect
+  VBoxManage debugvm <uuid|vmname> osinfo
+  VBoxManage debugvm <uuid|vmname> osdmesg [--lines=lines]
+  VBoxManage debugvm <uuid|vmname> getregisters [--cpu=id] [reg-set.reg-name...]
+  VBoxManage debugvm <uuid|vmname> setregisters [--cpu=id]
+      [reg-set.reg-name=value...]
+  VBoxManage debugvm <uuid|vmname> show [[--human-readable] | [--sh-export] |
+      [--sh-eval] | [--cmd-set]] [settings-item...]
+  VBoxManage debugvm <uuid|vmname> stack [--cpu=id]
+  VBoxManage debugvm <uuid|vmname> statistics [--reset] [--descriptions]
+      [--pattern=pattern]
+
+ Extension package management:
+  VBoxManage extpack install [--replace] <tarball>
+  VBoxManage extpack uninstall [--force] <name>
+  VBoxManage extpack cleanup
+
+Syntax error: Invalid command 'start'
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ man VBoxManage
+No manual entry for VBoxManage
+jun-MacBook:vagrant2 junoyoshi$ VBoxManage start piyo --headless > hoge
+Oracle VM VirtualBox Command Line Management Interface Version 5.1.14
+(C) 2005-2017 Oracle Corporation
+All rights reserved.
+
+Usage:
+
+  VBoxManage [<general option>] <command>
+
+
+General Options:
+
+  [-v|--version]            print version number and exit
+  [-q|--nologo]             suppress the logo
+  [--settingspw <pw>]       provide the settings password
+  [--settingspwfile <file>] provide a file containing the settings password
+
+
+Commands:
+
+  list [--long|-l]          vms|runningvms|ostypes|hostdvds|hostfloppies|
+                            intnets|bridgedifs|hostonlyifs|natnets|dhcpservers|
+                            hostinfo|hostcpuids|hddbackends|hdds|dvds|floppies|
+                            usbhost|usbfilters|systemproperties|extpacks|
+                            groups|webcams|screenshotformats
+
+  showvminfo                <uuid|vmname> [--details]
+                            [--machinereadable]
+  showvminfo                <uuid|vmname> --log <idx>
+
+  registervm                <filename>
+
+  unregistervm              <uuid|vmname> [--delete]
+
+  createvm                  --name <name>
+                            [--groups <group>, ...]
+                            [--ostype <ostype>]
+                            [--register]
+                            [--basefolder <path>]
+                            [--uuid <uuid>]
+
+  modifyvm                  <uuid|vmname>
+                            [--name <name>]
+                            [--groups <group>, ...]
+                            [--description <desc>]
+                            [--ostype <ostype>]
+                            [--iconfile <filename>]
+                            [--memory <memorysize in MB>]
+                            [--pagefusion on|off]
+                            [--vram <vramsize in MB>]
+                            [--acpi on|off]
+                            [--pciattach 03:04.0]
+                            [--pciattach 03:04.0@02:01.0]
+                            [--pcidetach 03:04.0]
+                            [--ioapic on|off]
+                            [--hpet on|off]
+                            [--triplefaultreset on|off]
+                            [--apic on|off]
+                            [--x2apic on|off]
+                            [--paravirtprovider none|default|legacy|minimal|
+                                                hyperv|kvm]
+                            [--paravirtdebug <key=value> [,<key=value> ...]]
+                            [--hwvirtex on|off]
+                            [--nestedpaging on|off]
+                            [--largepages on|off]
+                            [--vtxvpid on|off]
+                            [--vtxux on|off]
+                            [--pae on|off]
+                            [--longmode on|off]
+                            [--cpu-profile "host|Intel 80[86|286|386]"]
+                            [--cpuid-portability-level <0..3>
+                            [--cpuidset <leaf> <eax> <ebx> <ecx> <edx>]
+                            [--cpuidremove <leaf>]
+                            [--cpuidremoveall]
+                            [--hardwareuuid <uuid>]
+                            [--cpus <number>]
+                            [--cpuhotplug on|off]
+                            [--plugcpu <id>]
+                            [--unplugcpu <id>]
+                            [--cpuexecutioncap <1-100>]
+                            [--rtcuseutc on|off]
+                            [--graphicscontroller none|vboxvga|vmsvga]
+                            [--monitorcount <number>]
+                            [--accelerate3d on|off]
+                            [--accelerate2dvideo on|off]
+                            [--firmware bios|efi|efi32|efi64]
+                            [--chipset ich9|piix3]
+                            [--bioslogofadein on|off]
+                            [--bioslogofadeout on|off]
+                            [--bioslogodisplaytime <msec>]
+                            [--bioslogoimagepath <imagepath>]
+                            [--biosbootmenu disabled|menuonly|messageandmenu]
+                            [--biosapic disabled|apic|x2apic]
+                            [--biossystemtimeoffset <msec>]
+                            [--biospxedebug on|off]
+                            [--boot<1-4> none|floppy|dvd|disk|net>]
+                            [--nic<1-N> none|null|nat|bridged|intnet|hostonly|
+                                        generic|natnetwork]
+                            [--nictype<1-N> Am79C970A|Am79C973|
+                                            82540EM|82543GC|82545EM|
+                                            virtio]
+                            [--cableconnected<1-N> on|off]
+                            [--nictrace<1-N> on|off]
+                            [--nictracefile<1-N> <filename>]
+                            [--nicproperty<1-N> name=[value]]
+                            [--nicspeed<1-N> <kbps>]
+                            [--nicbootprio<1-N> <priority>]
+                            [--nicpromisc<1-N> deny|allow-vms|allow-all]
+                            [--nicbandwidthgroup<1-N> none|<name>]
+                            [--bridgeadapter<1-N> none|<devicename>]
+                            [--hostonlyadapter<1-N> none|<devicename>]
+                            [--intnet<1-N> <network name>]
+                            [--nat-network<1-N> <network name>]
+                            [--nicgenericdrv<1-N> <driver>
+                            [--natnet<1-N> <network>|default]
+                            [--natsettings<1-N> [<mtu>],[<socksnd>],
+                                                [<sockrcv>],[<tcpsnd>],
+                                                [<tcprcv>]]
+                            [--natpf<1-N> [<rulename>],tcp|udp,[<hostip>],
+                                          <hostport>,[<guestip>],<guestport>]
+                            [--natpf<1-N> delete <rulename>]
+                            [--nattftpprefix<1-N> <prefix>]
+                            [--nattftpfile<1-N> <file>]
+                            [--nattftpserver<1-N> <ip>]
+                            [--natbindip<1-N> <ip>
+                            [--natdnspassdomain<1-N> on|off]
+                            [--natdnsproxy<1-N> on|off]
+                            [--natdnshostresolver<1-N> on|off]
+                            [--nataliasmode<1-N> default|[log],[proxyonly],
+                                                         [sameports]]
+                            [--macaddress<1-N> auto|<mac>]
+                            [--mouse ps2|usb|usbtablet|usbmultitouch]
+                            [--keyboard ps2|usb
+                            [--uart<1-N> off|<I/O base> <IRQ>]
+                            [--uartmode<1-N> disconnected|
+                                             server <pipe>|
+                                             client <pipe>|
+                                             tcpserver <port>|
+                                             tcpclient <hostname:port>|
+                                             file <file>|
+                                             <devicename>]
+                            [--guestmemoryballoon <balloonsize in MB>]
+                            [--audio none|null|coreaudio]
+                            [--audiocontroller ac97|hda|sb16]
+                            [--audiocodec stac9700|ad1980|stac9221|sb16]
+                            [--clipboard disabled|hosttoguest|guesttohost|
+                                         bidirectional]
+                            [--draganddrop disabled|hosttoguest]
+                            [--vrde on|off]
+                            [--vrdeextpack default|<name>
+                            [--vrdeproperty <name=[value]>]
+                            [--vrdeport <hostport>]
+                            [--vrdeaddress <hostip>]
+                            [--vrdeauthtype null|external|guest]
+                            [--vrdeauthlibrary default|<name>
+                            [--vrdemulticon on|off]
+                            [--vrdereusecon on|off]
+                            [--vrdevideochannel on|off]
+                            [--vrdevideochannelquality <percent>]
+                            [--usb on|off]
+                            [--usbehci on|off]
+                            [--usbxhci on|off]
+                            [--usbrename <oldname> <newname>]
+                            [--snapshotfolder default|<path>]
+                            [--teleporter on|off]
+                            [--teleporterport <port>]
+                            [--teleporteraddress <address|empty>
+                            [--teleporterpassword <password>]
+                            [--teleporterpasswordfile <file>|stdin]
+                            [--tracing-enabled on|off]
+                            [--tracing-config <config-string>]
+                            [--tracing-allow-vm-access on|off]
+                            [--usbcardreader on|off]
+                            [--autostart-enabled on|off]
+                            [--autostart-delay <seconds>]
+                            [--videocap on|off]
+                            [--videocapscreens all|<screen ID> [<screen ID> ...]]
+                            [--videocapfile <filename>]
+                            [--videocapres <width> <height>]
+                            [--videocaprate <rate>]
+                            [--videocapfps <fps>]
+                            [--videocapmaxtime <ms>]
+                            [--videocapmaxsize <MB>]
+                            [--videocapopts <key=value> [,<key=value> ...]]
+                            [--defaultfrontend default|<name>]
+
+  clonevm                   <uuid|vmname>
+                            [--snapshot <uuid>|<name>]
+                            [--mode machine|machineandchildren|all]
+                            [--options link|keepallmacs|keepnatmacs|
+                                       keepdisknames]
+                            [--name <name>]
+                            [--groups <group>, ...]
+                            [--basefolder <basefolder>]
+                            [--uuid <uuid>]
+                            [--register]
+
+  import                    <ovfname/ovaname>
+                            [--dry-run|-n]
+                            [--options keepallmacs|keepnatmacs|importtovdi]
+                            [more options]
+                            (run with -n to have options displayed
+                             for a particular OVF)
+
+  export                    <machines> --output|-o <name>.<ovf/ova>
+                            [--legacy09|--ovf09|--ovf10|--ovf20]
+                            [--manifest]
+                            [--iso]
+                            [--options manifest|iso|nomacs|nomacsbutnat]
+                            [--vsys <number of virtual system>]
+                                    [--product <product name>]
+                                    [--producturl <product url>]
+                                    [--vendor <vendor name>]
+                                    [--vendorurl <vendor url>]
+                                    [--version <version info>]
+                                    [--description <description info>]
+                                    [--eula <license text>]
+                                    [--eulafile <filename>]
+
+  startvm                   <uuid|vmname>...
+                            [--type gui|headless|separate]
+
+  controlvm                 <uuid|vmname>
+                            pause|resume|reset|poweroff|savestate|
+                            acpipowerbutton|acpisleepbutton|
+                            keyboardputscancode <hex> [<hex> ...]|
+                            setlinkstate<1-N> on|off |
+                            nic<1-N> null|nat|bridged|intnet|hostonly|generic|
+                                     natnetwork [<devicename>] |
+                            nictrace<1-N> on|off |
+                            nictracefile<1-N> <filename> |
+                            nicproperty<1-N> name=[value] |
+                            nicpromisc<1-N> deny|allow-vms|allow-all |
+                            natpf<1-N> [<rulename>],tcp|udp,[<hostip>],
+                                        <hostport>,[<guestip>],<guestport> |
+                            natpf<1-N> delete <rulename> |
+                            guestmemoryballoon <balloonsize in MB> |
+                            usbattach <uuid>|<address>
+                                      [--capturefile <filename>] |
+                            usbdetach <uuid>|<address> |
+                            clipboard disabled|hosttoguest|guesttohost|
+                                      bidirectional |
+                            draganddrop disabled|hosttoguest |
+                            vrde on|off |
+                            vrdeport <port> |
+                            vrdeproperty <name=[value]> |
+                            vrdevideochannelquality <percent> |
+                            setvideomodehint <xres> <yres> <bpp>
+                                            [[<display>] [<enabled:yes|no> |
+                                              [<xorigin> <yorigin>]]] |
+                            screenshotpng <file> [display] |
+                            videocap on|off |
+                            videocapscreens all|none|<screen>,[<screen>...] |
+                            videocapfile <file>
+                            videocapres <width>x<height>
+                            videocaprate <rate>
+                            videocapfps <fps>
+                            videocapmaxtime <ms>
+                            videocapmaxsize <MB>
+                            setcredentials <username>
+                                           --passwordfile <file> | <password>
+                                           <domain>
+                                           [--allowlocallogon <yes|no>] |
+                            teleport --host <name> --port <port>
+                                     [--maxdowntime <msec>]
+                                     [--passwordfile <file> |
+                                      --password <password>] |
+                            plugcpu <id> |
+                            unplugcpu <id> |
+                            cpuexecutioncap <1-100>
+                            webcam <attach [path [settings]]> | <detach [path]> | <list>
+                            addencpassword <id>
+                                           <password file>|-
+                                           [--removeonsuspend <yes|no>]
+                            removeencpassword <id>
+                            removeallencpasswords
+
+  discardstate              <uuid|vmname>
+
+  adoptstate                <uuid|vmname> <state_file>
+
+  snapshot                  <uuid|vmname>
+                            take <name> [--description <desc>] [--live]
+                                 [--uniquename Number,Timestamp,Space,Force] |
+                            delete <uuid|snapname> |
+                            restore <uuid|snapname> |
+                            restorecurrent |
+                            edit <uuid|snapname>|--current
+                                 [--name <name>]
+                                 [--description <desc>] |
+                            list [--details|--machinereadable]
+                            showvminfo <uuid|snapname>
+
+  closemedium               [disk|dvd|floppy] <uuid|filename>
+                            [--delete]
+
+  storageattach             <uuid|vmname>
+                            --storagectl <name>
+                            [--port <number>]
+                            [--device <number>]
+                            [--type dvddrive|hdd|fdd]
+                            [--medium none|emptydrive|additions|
+                                      <uuid|filename>|host:<drive>|iscsi]
+                            [--mtype normal|writethrough|immutable|shareable|
+                                     readonly|multiattach]
+                            [--comment <text>]
+                            [--setuuid <uuid>]
+                            [--setparentuuid <uuid>]
+                            [--passthrough on|off]
+                            [--tempeject on|off]
+                            [--nonrotational on|off]
+                            [--discard on|off]
+                            [--hotpluggable on|off]
+                            [--bandwidthgroup <name>]
+                            [--forceunmount]
+                            [--server <name>|<ip>]
+                            [--target <target>]
+                            [--tport <port>]
+                            [--lun <lun>]
+                            [--encodedlun <lun>]
+                            [--username <username>]
+                            [--password <password>]
+                            [--initiator <initiator>]
+                            [--intnet]
+
+  storagectl                <uuid|vmname>
+                            --name <name>
+                            [--add ide|sata|scsi|floppy|sas|usb|pcie]
+                            [--controller LSILogic|LSILogicSAS|BusLogic|
+                                          IntelAHCI|PIIX3|PIIX4|ICH6|I82078|
+                            [             USB|NVMe]
+                            [--portcount <1-n>]
+                            [--hostiocache on|off]
+                            [--bootable on|off]
+                            [--rename <name>]
+                            [--remove]
+
+  bandwidthctl              <uuid|vmname>
+                            add <name> --type disk|network
+                                --limit <megabytes per second>[k|m|g|K|M|G] |
+                            set <name>
+                                --limit <megabytes per second>[k|m|g|K|M|G] |
+                            remove <name> |
+                            list [--machinereadable]
+                            (limit units: k=kilobit, m=megabit, g=gigabit,
+                                          K=kilobyte, M=megabyte, G=gigabyte)
+
+  showmediuminfo            [disk|dvd|floppy] <uuid|filename>
+
+  createmedium              [disk|dvd|floppy] --filename <filename>
+                            [--size <megabytes>|--sizebyte <bytes>]
+                            [--diffparent <uuid>|<filename>
+                            [--format VDI|VMDK|VHD] (default: VDI)
+                            [--variant Standard,Fixed,Split2G,Stream,ESX]
+
+  modifymedium              [disk|dvd|floppy] <uuid|filename>
+                            [--type normal|writethrough|immutable|shareable|
+                                    readonly|multiattach]
+                            [--autoreset on|off]
+                            [--property <name=[value]>]
+                            [--compact]
+                            [--resize <megabytes>|--resizebyte <bytes>]
+                            [--move <full path to a new location>]
+  clonemedium               [disk|dvd|floppy] <uuid|inputfile> <uuid|outputfile>
+                            [--format VDI|VMDK|VHD|RAW|<other>]
+                            [--variant Standard,Fixed,Split2G,Stream,ESX]
+                            [--existing]
+
+  mediumproperty            [disk|dvd|floppy] set <uuid|filename>
+                            <property> <value>
+
+                            [disk|dvd|floppy] get <uuid|filename>
+                            <property>
+
+                            [disk|dvd|floppy] delete <uuid|filename>
+                            <property>
+
+  encryptmedium             <uuid|filename>
+                            [--newpassword <file>|-]
+                            [--oldpassword <file>|-]
+                            [--cipher <cipher identifier>]
+                            [--newpasswordid <password identifier>]
+
+  checkmediumpwd            <uuid|filename>
+                            <pwd file>|-
+
+  convertfromraw            <filename> <outputfile>
+                            [--format VDI|VMDK|VHD]
+                            [--variant Standard,Fixed,Split2G,Stream,ESX]
+                            [--uuid <uuid>]
+  convertfromraw            stdin <outputfile> <bytes>
+                            [--format VDI|VMDK|VHD]
+                            [--variant Standard,Fixed,Split2G,Stream,ESX]
+                            [--uuid <uuid>]
+
+  getextradata              global|<uuid|vmname>
+                            <key>|enumerate
+
+  setextradata              global|<uuid|vmname>
+                            <key>
+                            [<value>] (no value deletes key)
+
+  setproperty               machinefolder default|<folder> |
+                            hwvirtexclusive on|off |
+                            vrdeauthlibrary default|<library> |
+                            websrvauthlibrary default|null|<library> |
+                            vrdeextpack null|<library> |
+                            autostartdbpath null|<folder> |
+                            loghistorycount <value>
+                            defaultfrontend default|<name>
+                            logginglevel <log setting>
+
+  usbfilter                 add <index,0-N>
+                            --target <uuid|vmname>|global
+                            --name <string>
+                            --action ignore|hold (global filters only)
+                            [--active yes|no] (yes)
+                            [--vendorid <XXXX>] (null)
+                            [--productid <XXXX>] (null)
+                            [--revision <IIFF>] (null)
+                            [--manufacturer <string>] (null)
+                            [--product <string>] (null)
+                            [--remote yes|no] (null, VM filters only)
+                            [--serialnumber <string>] (null)
+                            [--maskedinterfaces <XXXXXXXX>]
+
+  usbfilter                 modify <index,0-N>
+                            --target <uuid|vmname>|global
+                            [--name <string>]
+                            [--action ignore|hold] (global filters only)
+                            [--active yes|no]
+                            [--vendorid <XXXX>|""]
+                            [--productid <XXXX>|""]
+                            [--revision <IIFF>|""]
+                            [--manufacturer <string>|""]
+                            [--product <string>|""]
+                            [--remote yes|no] (null, VM filters only)
+                            [--serialnumber <string>|""]
+                            [--maskedinterfaces <XXXXXXXX>]
+
+  usbfilter                 remove <index,0-N>
+                            --target <uuid|vmname>|global
+
+  sharedfolder              add <uuid|vmname>
+                            --name <name> --hostpath <hostpath>
+                            [--transient] [--readonly] [--automount]
+
+  sharedfolder              remove <uuid|vmname>
+                            --name <name> [--transient]
+
+  guestproperty             get <uuid|vmname>
+                            <property> [--verbose]
+
+  guestproperty             set <uuid|vmname>
+                            <property> [<value> [--flags <flags>]]
+
+  guestproperty             delete|unset <uuid|vmname>
+                            <property>
+
+  guestproperty             enumerate <uuid|vmname>
+                            [--patterns <patterns>]
+
+  guestproperty             wait <uuid|vmname> <patterns>
+                            [--timeout <msec>] [--fail-on-timeout]
+
+  guestcontrol              <uuid|vmname> [--verbose|-v] [--quiet|-q]
+                              [--username <name>] [--domain <domain>]
+                              [--passwordfile <file> | --password <password>]
+
+                              run [common-options]
+                              [--exe <path to executable>] [--timeout <msec>]
+                              [-E|--putenv <NAME>[=<VALUE>]] [--unquoted-args]
+                              [--ignore-operhaned-processes] [--profile]
+                              [--no-wait-stdout|--wait-stdout]
+                              [--no-wait-stderr|--wait-stderr]
+                              [--dos2unix] [--unix2dos]
+                              -- <program/arg0> [argument1] ... [argumentN]]
+
+                              start [common-options]
+                              [--exe <path to executable>] [--timeout <msec>]
+                              [-E|--putenv <NAME>[=<VALUE>]] [--unquoted-args]
+                              [--ignore-operhaned-processes] [--profile]
+                              -- <program/arg0> [argument1] ... [argumentN]]
+
+                              copyfrom [common-options]
+                              [--dryrun] [--follow] [-R|--recursive]
+                              <guest-src0> [guest-src1 [...]] <host-dst>
+
+                              copyfrom [common-options]
+                              [--dryrun] [--follow] [-R|--recursive]
+                              [--target-directory <host-dst-dir>]
+                              <guest-src0> [guest-src1 [...]]
+
+                              copyto [common-options]
+                              [--dryrun] [--follow] [-R|--recursive]
+                              <host-src0> [host-src1 [...]] <guest-dst>
+
+                              copyto [common-options]
+                              [--dryrun] [--follow] [-R|--recursive]
+                              [--target-directory <guest-dst>]
+                              <host-src0> [host-src1 [...]]
+
+                              mkdir|createdir[ectory] [common-options]
+                              [--parents] [--mode <mode>]
+                              <guest directory> [...]
+
+                              rmdir|removedir[ectory] [common-options]
+                              [-R|--recursive]
+                              <guest directory> [...]
+
+                              removefile|rm [common-options] [-f|--force]
+                              <guest file> [...]
+
+                              mv|move|ren[ame] [common-options]
+                              <source> [source1 [...]] <dest>
+
+                              mktemp|createtemp[orary] [common-options]
+                              [--secure] [--mode <mode>] [--tmpdir <directory>]
+                              <template>
+
+                              stat [common-options]
+                              <file> [...]
+
+  guestcontrol              <uuid|vmname> [--verbose|-v] [--quiet|-q]
+
+                              list <all|sessions|processes|files> [common-opts]
+
+                              closeprocess [common-options]
+                              <   --session-id <ID>
+                                | --session-name <name or pattern>
+                              <PID1> [PID1 [...]]
+
+                              closesession [common-options]
+                              <  --all | --session-id <ID>
+                                | --session-name <name or pattern> >
+
+                              updatega|updateguestadditions|updateadditions
+                              [--source <guest additions .ISO>]
+                              [--wait-start] [common-options]
+                              [-- [<argument1>] ... [<argumentN>]]
+
+                              watch [common-options]
+
+  metrics                   list [*|host|<vmname> [<metric_list>]]
+                                                 (comma-separated)
+
+  metrics                   setup
+                            [--period <seconds>] (default: 1)
+                            [--samples <count>] (default: 1)
+                            [--list]
+                            [*|host|<vmname> [<metric_list>]]
+
+  metrics                   query [*|host|<vmname> [<metric_list>]]
+
+  metrics                   enable
+                            [--list]
+                            [*|host|<vmname> [<metric_list>]]
+
+  metrics                   disable
+                            [--list]
+                            [*|host|<vmname> [<metric_list>]]
+
+  metrics                   collect
+                            [--period <seconds>] (default: 1)
+                            [--samples <count>] (default: 1)
+                            [--list]
+                            [--detach]
+                            [*|host|<vmname> [<metric_list>]]
+
+  natnetwork                add --netname <name>
+                            --network <network>
+                            [--enable|--disable]
+                            [--dhcp on|off]
+                            [--port-forward-4 <rule>]
+                            [--loopback-4 <rule>]
+                            [--ipv6 on|off]
+                            [--port-forward-6 <rule>]
+                            [--loopback-6 <rule>]
+
+  natnetwork                remove --netname <name>
+
+  natnetwork                modify --netname <name>
+                            [--network <network>]
+                            [--enable|--disable]
+                            [--dhcp on|off]
+                            [--port-forward-4 <rule>]
+                            [--loopback-4 <rule>]
+                            [--ipv6 on|off]
+                            [--port-forward-6 <rule>]
+                            [--loopback-6 <rule>]
+
+  natnetwork                start --netname <name>
+
+  natnetwork                stop --netname <name>
+
+  natnetwork                list [<pattern>]
+
+  hostonlyif                ipconfig <name>
+                            [--dhcp |
+                            --ip<ipv4> [--netmask<ipv4> (def: 255.255.255.0)] |
+                            --ipv6<ipv6> [--netmasklengthv6<length> (def: 64)]]
+                            create |
+                            remove <name>
+
+  dhcpserver                add|modify --netname <network_name> |
+                                       --ifname <hostonly_if_name>
+                            [--ip <ip_address>
+                            --netmask <network_mask>
+                            --lowerip <lower_ip>
+                            --upperip <upper_ip>]
+                            [--enable | --disable]
+
+  dhcpserver                remove --netname <network_name> |
+                                   --ifname <hostonly_if_name>
+
+  usbdevsource              add <source name>
+                            --backend <backend>
+                            --address <address>
+  usbdevsource              remove <source name>
+
+ Introspection and guest debugging:
+  VBoxManage debugvm <uuid|vmname> dumpvmcore [--filename=name]
+  VBoxManage debugvm <uuid|vmname> info <item> [args...]
+  VBoxManage debugvm <uuid|vmname> injectnmi
+  VBoxManage debugvm <uuid|vmname> log [[--release] | [--debug]]
+      [group-settings...]
+  VBoxManage debugvm <uuid|vmname> logdest [[--release] | [--debug]]
+      [destinations...]
+  VBoxManage debugvm <uuid|vmname> logflags [[--release] | [--debug]] [flags...]
+  VBoxManage debugvm <uuid|vmname> osdetect
+  VBoxManage debugvm <uuid|vmname> osinfo
+  VBoxManage debugvm <uuid|vmname> osdmesg [--lines=lines]
+  VBoxManage debugvm <uuid|vmname> getregisters [--cpu=id] [reg-set.reg-name...]
+  VBoxManage debugvm <uuid|vmname> setregisters [--cpu=id]
+      [reg-set.reg-name=value...]
+  VBoxManage debugvm <uuid|vmname> show [[--human-readable] | [--sh-export] |
+      [--sh-eval] | [--cmd-set]] [settings-item...]
+  VBoxManage debugvm <uuid|vmname> stack [--cpu=id]
+  VBoxManage debugvm <uuid|vmname> statistics [--reset] [--descriptions]
+      [--pattern=pattern]
+
+ Extension package management:
+  VBoxManage extpack install [--replace] <tarball>
+  VBoxManage extpack uninstall [--force] <name>
+  VBoxManage extpack cleanup
+
+Syntax error: Invalid command 'start'
+jun-MacBook:vagrant2 junoyoshi$ view hoge
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ VBoxManage  > hoge
+jun-MacBook:vagrant2 junoyoshi$ ll
+total 64
+-rw-r--r--  1 junoyoshi  staff  31855  2  9 06:08 hoge
+-rw-r--r--  1 junoyoshi  staff      0  2  9 06:01 moge
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$
+jun-MacBook:vagrant2 junoyoshi$ rm moge
+jun-MacBook:vagrant2 junoyoshi$ view hoge
+jun-MacBook:vagrant2 junoyoshi$ VBoxManage startvm piyo --headless
+Oracle VM VirtualBox Command Line Management Interface Version 5.1.14
+(C) 2005-2017 Oracle Corporation
+All rights reserved.
+
+Usage:
+
+VBoxManage startvm          <uuid|vmname>...
+                            [--type gui|headless|separate]
+
+
+Syntax error: unknown option: --headless
+
+jun-MacBook:vagrant2 junoyoshi$ VBoxManage startvm piyo --type headless
+Waiting for VM "piyo" to power on...
+VM "piyo" has been successfully started.
+jun-MacBook:vagrant2 junoyoshi$ ssh root@192.168.0.15
+The authenticity of host '192.168.0.15 (192.168.0.15)' can't be established.
+RSA key fingerprint is SHA256:Qnp+U8iv4AiMaRHqR26UKxIVFXyCJR1EHApuEF4QqQ4.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '192.168.0.15' (RSA) to the list of known hosts.
+root@192.168.0.15's password:
+Last login: Thu Feb  9 06:00:49 2017
+[root@wealthcare-api-1 ~]#
+[root@wealthcare-api-1 ~]#
+[root@wealthcare-api-1 ~]# pwd
+/root
+[root@wealthcare-api-1 ~]# ls
+[root@wealthcare-api-1 ~]#
+[root@wealthcare-api-1 ~]# ruby -v
+-bash: ruby: command not found
+[root@wealthcare-api-1 ~]#
+[root@wealthcare-api-1 ~]# su - vagrant
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$ which ruby
+~/.rbenv/shims/ruby
+[vagrant@wealthcare-api-1 ~]$ ruby -v
+ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$ which gem
+~/.rbenv/shims/gem
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$ gem install rails
+Fetching: i18n-0.8.0.gem (100%)
+Successfully installed i18n-0.8.0
+Fetching: thread_safe-0.3.5.gem (100%)
+Successfully installed thread_safe-0.3.5
+Fetching: tzinfo-1.2.2.gem (100%)
+Successfully installed tzinfo-1.2.2
+Fetching: concurrent-ruby-1.0.4.gem (100%)
+Successfully installed concurrent-ruby-1.0.4
+Fetching: activesupport-5.0.1.gem (100%)
+Successfully installed activesupport-5.0.1
+Fetching: rack-2.0.1.gem (100%)
+Successfully installed rack-2.0.1
+Fetching: rack-test-0.6.3.gem (100%)
+Successfully installed rack-test-0.6.3
+Fetching: mini_portile2-2.1.0.gem (100%)
+Successfully installed mini_portile2-2.1.0
+Fetching: nokogiri-1.7.0.1.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed nokogiri-1.7.0.1
+Fetching: loofah-2.0.3.gem (100%)
+Successfully installed loofah-2.0.3
+Fetching: rails-html-sanitizer-1.0.3.gem (100%)
+Successfully installed rails-html-sanitizer-1.0.3
+Fetching: rails-dom-testing-2.0.2.gem (100%)
+Successfully installed rails-dom-testing-2.0.2
+Fetching: builder-3.2.3.gem (100%)
+Successfully installed builder-3.2.3
+Fetching: erubis-2.7.0.gem (100%)
+Successfully installed erubis-2.7.0
+Fetching: actionview-5.0.1.gem (100%)
+Successfully installed actionview-5.0.1
+Fetching: actionpack-5.0.1.gem (100%)
+Successfully installed actionpack-5.0.1
+Fetching: activemodel-5.0.1.gem (100%)
+Successfully installed activemodel-5.0.1
+Fetching: arel-7.1.4.gem (100%)
+Successfully installed arel-7.1.4
+Fetching: activerecord-5.0.1.gem (100%)
+Successfully installed activerecord-5.0.1
+Fetching: globalid-0.3.7.gem (100%)
+Successfully installed globalid-0.3.7
+Fetching: activejob-5.0.1.gem (100%)
+Successfully installed activejob-5.0.1
+Fetching: mime-types-data-3.2016.0521.gem (100%)
+Successfully installed mime-types-data-3.2016.0521
+Fetching: mime-types-3.1.gem (100%)
+Successfully installed mime-types-3.1
+Fetching: mail-2.6.4.gem (100%)
+Successfully installed mail-2.6.4
+Fetching: actionmailer-5.0.1.gem (100%)
+Successfully installed actionmailer-5.0.1
+Fetching: nio4r-1.2.1.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed nio4r-1.2.1
+Fetching: websocket-extensions-0.1.2.gem (100%)
+Successfully installed websocket-extensions-0.1.2
+Fetching: websocket-driver-0.6.5.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed websocket-driver-0.6.5
+Fetching: actioncable-5.0.1.gem (100%)
+Successfully installed actioncable-5.0.1
+Fetching: thor-0.19.4.gem (100%)
+Successfully installed thor-0.19.4
+Fetching: method_source-0.8.2.gem (100%)
+Successfully installed method_source-0.8.2
+Fetching: railties-5.0.1.gem (100%)
+Successfully installed railties-5.0.1
+Fetching: sprockets-3.7.1.gem (100%)
+Successfully installed sprockets-3.7.1
+Fetching: sprockets-rails-3.2.0.gem (100%)
+Successfully installed sprockets-rails-3.2.0
+Fetching: rails-5.0.1.gem (100%)
+Successfully installed rails-5.0.1
+35 gems installed
+[vagrant@wealthcare-api-1 ~]$ echo $?
+0
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$ pwd
+/home/vagrant
+[vagrant@wealthcare-api-1 ~]$ ls
+data
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$ cd data
+[vagrant@wealthcare-api-1 data]$ ll
+total 0
+[vagrant@wealthcare-api-1 data]$
+[vagrant@wealthcare-api-1 data]$ touch hoge
+touch: cannot touch `hoge': Permission denied
+[vagrant@wealthcare-api-1 data]$ cd ..
+[vagrant@wealthcare-api-1 ~]$ ls
+data
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$ touch hoge
+[vagrant@wealthcare-api-1 ~]$ ll
+total 4
+drwxr-xr-x 2 root    root    4096 Feb  9 06:02 data
+-rw-rw-r-- 1 vagrant vagrant    0 Feb  9 06:14 hoge
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$ rm hoge
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$ rails --version
+Rails 5.0.1
+[vagrant@wealthcare-api-1 ~]$ rails new blog
+      create
+      create  README.md
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/config/manifest.js
+      create  app/assets/javascripts/application.js
+      create  app/assets/javascripts/cable.js
+      create  app/assets/stylesheets/application.css
+      create  app/channels/application_cable/channel.rb
+      create  app/channels/application_cable/connection.rb
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/jobs/application_job.rb
+      create  app/mailers/application_mailer.rb
+      create  app/models/application_record.rb
+      create  app/views/layouts/application.html.erb
+      create  app/views/layouts/mailer.html.erb
+      create  app/views/layouts/mailer.text.erb
+      create  app/assets/images/.keep
+      create  app/assets/javascripts/channels
+      create  app/assets/javascripts/channels/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  bin/update
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/cable.yml
+      create  config/puma.rb
+      create  config/spring.rb
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/application_controller_renderer.rb
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/cors.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/new_framework_defaults.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/apple-touch-icon-precomposed.png
+      create  public/apple-touch-icon.png
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/fixtures/files
+      create  test/fixtures/files/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp
+      create  tmp/.keep
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+      remove  config/initializers/cors.rb
+         run  bundle install
+The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform mingw, mswin, x64_mingw, jruby`.
+Fetching gem metadata from https://rubygems.org/...........
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake 12.0.0
+Using concurrent-ruby 1.0.4
+Using i18n 0.8.0
+Using minitest 5.10.1
+Using thread_safe 0.3.5
+Using builder 3.2.3
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using rack 2.0.1
+Using nio4r 1.2.1
+Using websocket-extensions 0.1.2
+Using mime-types-data 3.2016.0521
+Using arel 7.1.4
+Using bundler 1.14.3
+Installing byebug 9.0.6 with native extensions
+Installing coffee-script-source 1.12.2
+Installing execjs 2.7.0
+Using method_source 0.8.2
+Using thor 0.19.4
+Installing debug_inspector 0.0.2 with native extensions
+Installing ffi 1.9.17 with native extensions
+Installing multi_json 1.12.1
+Installing rb-fsevent 0.9.8
+Installing puma 3.7.0 with native extensions
+Installing sass 3.4.23
+Installing tilt 2.0.6
+Installing sqlite3 1.3.13 with native extensions
+Installing turbolinks-source 5.0.0
+Using tzinfo 1.2.2
+Using nokogiri 1.7.0.1
+Using rack-test 0.6.3
+Using sprockets 3.7.1
+Using websocket-driver 0.6.5
+Using mime-types 3.1
+Installing coffee-script 2.4.1
+Installing uglifier 3.0.4
+Installing rb-inotify 0.9.8
+Installing turbolinks 5.0.1
+Using activesupport 5.0.1
+Using loofah 2.0.3
+Using mail 2.6.4
+Installing listen 3.0.8
+Using rails-dom-testing 2.0.2
+Using globalid 0.3.7
+Using activemodel 5.0.1
+Installing jbuilder 2.6.1
+Installing spring 2.0.1
+Using rails-html-sanitizer 1.0.3
+Using activejob 5.0.1
+Using activerecord 5.0.1
+Installing spring-watcher-listen 2.0.1
+Using actionview 5.0.1
+Using actionpack 5.0.1
+Using actioncable 5.0.1
+Using actionmailer 5.0.1
+Using railties 5.0.1
+Using sprockets-rails 3.2.0
+Installing coffee-rails 4.2.1
+Installing jquery-rails 4.2.2
+Installing web-console 3.4.0
+Using rails 5.0.1
+Installing sass-rails 5.0.6
+Bundle complete! 15 Gemfile dependencies, 62 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+[vagrant@wealthcare-api-1 ~]$ echo $?
+0
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$ ll
+total 8
+drwxrwxr-x 12 vagrant vagrant 4096 Feb  9 06:15 blog
+drwxr-xr-x  2 root    root    4096 Feb  9 06:02 data
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$
+[vagrant@wealthcare-api-1 ~]$ cd blog/
+[vagrant@wealthcare-api-1 blog]$ ls
+app  config     db       Gemfile.lock  log     Rakefile   test  vendor
+bin  config.ru  Gemfile  lib           public  README.md  tmp
+[vagrant@wealthcare-api-1 blog]$
+[vagrant@wealthcare-api-1 blog]$
+[vagrant@wealthcare-api-1 blog]$
+[vagrant@wealthcare-api-1 blog]$ rails s
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:51: warning: constant ::Fixnum is deprecated
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:52: warning: constant ::Bignum is deprecated
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:94:in `rescue in block (2 levels) in require': There was an error while trying to load the gem 'uglifier'. (Bundler::GemRequireError)
+Gem Load Error is: Could not find a JavaScript runtime. See https://github.com/rails/execjs for a list of available runtimes.
+Backtrace for gem load error is:
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/execjs-2.7.0/lib/execjs/runtimes.rb:58:in `autodetect'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/execjs-2.7.0/lib/execjs.rb:5:in `<module:ExecJS>'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/execjs-2.7.0/lib/execjs.rb:4:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/uglifier-3.0.4/lib/uglifier.rb:5:in `require'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/uglifier-3.0.4/lib/uglifier.rb:5:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:91:in `require'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:91:in `block (2 levels) in require'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:86:in `each'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:86:in `block in require'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:75:in `each'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:75:in `require'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler.rb:107:in `require'
+/home/vagrant/blog/config/application.rb:7:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:88:in `require'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:88:in `block in server'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:85:in `tap'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:85:in `server'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands.rb:18:in `<top (required)>'
+/home/vagrant/blog/bin/rails:9:in `require'
+/home/vagrant/blog/bin/rails:9:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client/rails.rb:28:in `load'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client/rails.rb:28:in `call'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client/command.rb:7:in `call'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client.rb:30:in `run'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/bin/spring:49:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/binstub.rb:31:in `load'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/binstub.rb:31:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+/home/vagrant/blog/bin/spring:15:in `<top (required)>'
+bin/rails:3:in `load'
+bin/rails:3:in `<main>'
+Bundler Error Backtrace:
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:90:in `block (2 levels) in require'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:86:in `each'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:86:in `block in require'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:75:in `each'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:75:in `require'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler.rb:107:in `require'
+	from /home/vagrant/blog/config/application.rb:7:in `<top (required)>'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:88:in `require'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:88:in `block in server'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:85:in `tap'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:85:in `server'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/vagrant/blog/bin/rails:9:in `require'
+	from /home/vagrant/blog/bin/rails:9:in `<top (required)>'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client/rails.rb:28:in `load'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client/rails.rb:28:in `call'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client/command.rb:7:in `call'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client.rb:30:in `run'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/bin/spring:49:in `<top (required)>'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/binstub.rb:31:in `load'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/binstub.rb:31:in `<top (required)>'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/vagrant/blog/bin/spring:15:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+[vagrant@wealthcare-api-1 blog]$ echo $?
+1
+[vagrant@wealthcare-api-1 blog]$
+[vagrant@wealthcare-api-1 blog]$ ^C
+[vagrant@wealthcare-api-1 blog]$ gem install execjs
+Successfully installed execjs-2.7.0
+1 gem installed
+[vagrant@wealthcare-api-1 blog]$ rails s
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:51: warning: constant ::Fixnum is deprecated
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:52: warning: constant ::Bignum is deprecated
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:94:in `rescue in block (2 levels) in require': There was an error while trying to load the gem 'uglifier'. (Bundler::GemRequireError)
+Gem Load Error is: Could not find a JavaScript runtime. See https://github.com/rails/execjs for a list of available runtimes.
+Backtrace for gem load error is:
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/execjs-2.7.0/lib/execjs/runtimes.rb:58:in `autodetect'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/execjs-2.7.0/lib/execjs.rb:5:in `<module:ExecJS>'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/execjs-2.7.0/lib/execjs.rb:4:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/uglifier-3.0.4/lib/uglifier.rb:5:in `require'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/uglifier-3.0.4/lib/uglifier.rb:5:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:91:in `require'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:91:in `block (2 levels) in require'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:86:in `each'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:86:in `block in require'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:75:in `each'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:75:in `require'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler.rb:107:in `require'
+/home/vagrant/blog/config/application.rb:7:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:88:in `require'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:88:in `block in server'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:85:in `tap'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:85:in `server'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands.rb:18:in `<top (required)>'
+/home/vagrant/blog/bin/rails:9:in `require'
+/home/vagrant/blog/bin/rails:9:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client/rails.rb:28:in `load'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client/rails.rb:28:in `call'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client/command.rb:7:in `call'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client.rb:30:in `run'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/bin/spring:49:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/binstub.rb:31:in `load'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/binstub.rb:31:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+/home/vagrant/blog/bin/spring:15:in `<top (required)>'
+bin/rails:3:in `load'
+bin/rails:3:in `<main>'
+Bundler Error Backtrace:
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:90:in `block (2 levels) in require'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:86:in `each'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:86:in `block in require'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:75:in `each'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler/runtime.rb:75:in `require'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bundler-1.14.3/lib/bundler.rb:107:in `require'
+	from /home/vagrant/blog/config/application.rb:7:in `<top (required)>'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:88:in `require'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:88:in `block in server'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:85:in `tap'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:85:in `server'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/vagrant/blog/bin/rails:9:in `require'
+	from /home/vagrant/blog/bin/rails:9:in `<top (required)>'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client/rails.rb:28:in `load'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client/rails.rb:28:in `call'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client/command.rb:7:in `call'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/client.rb:30:in `run'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/bin/spring:49:in `<top (required)>'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/binstub.rb:31:in `load'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/spring-2.0.1/lib/spring/binstub.rb:31:in `<top (required)>'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/vagrant/blog/bin/spring:15:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+[vagrant@wealthcare-api-1 blog]$ echo $?
+1
+[vagrant@wealthcare-api-1 blog]$
+[vagrant@wealthcare-api-1 blog]$
+[vagrant@wealthcare-api-1 blog]$ pwd
+/home/vagrant/blog
+[vagrant@wealthcare-api-1 blog]$ ls
+app  config     db       Gemfile.lock  log     Rakefile   test  vendor
+bin  config.ru  Gemfile  lib           public  README.md  tmp
+[vagrant@wealthcare-api-1 blog]$
+[vagrant@wealthcare-api-1 blog]$ vi Gemfile
+[vagrant@wealthcare-api-1 blog]$ vi Gemfile
+[vagrant@wealthcare-api-1 blog]$
+[vagrant@wealthcare-api-1 blog]$ rails s
+Could not find gem 'therubyracer' in any of the gem sources listed in your Gemfile.
+Run `bundle install` to install missing gems.
+[vagrant@wealthcare-api-1 blog]$ bundle install therubyracer
+ERROR: "bundle install" was called with arguments ["therubyracer"]
+Usage: "bundle install [OPTIONS]"
+[vagrant@wealthcare-api-1 blog]$ bundle install therubyracer
+ERROR: "bundle install" was called with arguments ["therubyracer"]
+Usage: "bundle install [OPTIONS]"
+[vagrant@wealthcare-api-1 blog]$ which bundle
+~/.rbenv/shims/bundle
+[vagrant@wealthcare-api-1 blog]$
+[vagrant@wealthcare-api-1 blog]$ bundle update
+The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform mingw, mswin, x64_mingw, jruby`.
+Fetching gem metadata from https://rubygems.org/...........
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake 12.0.0
+Using concurrent-ruby 1.0.4
+Using i18n 0.8.0
+Using minitest 5.10.1
+Using thread_safe 0.3.5
+Using builder 3.2.3
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using rack 2.0.1
+Using nio4r 1.2.1
+Using websocket-extensions 0.1.2
+Using mime-types-data 3.2016.0521
+Using arel 7.1.4
+Using bundler 1.14.3
+Using byebug 9.0.6
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using method_source 0.8.2
+Using thor 0.19.4
+Using debug_inspector 0.0.2
+Using ffi 1.9.17
+Using multi_json 1.12.1
+Installing libv8 3.16.14.17 (x86_64-linux)
+Using rb-fsevent 0.9.8
+Using puma 3.7.0
+Installing ref 2.0.0
+Using sass 3.4.23
+Using tilt 2.0.6
+Using sqlite3 1.3.13
+Using turbolinks-source 5.0.0
+Using tzinfo 1.2.2
+Using nokogiri 1.7.0.1
+Using rack-test 0.6.3
+Using sprockets 3.7.1
+Using websocket-driver 0.6.5
+Using mime-types 3.1
+Using coffee-script 2.4.1
+Using uglifier 3.0.4
+Using rb-inotify 0.9.8
+Installing therubyracer 0.12.3 with native extensions
+Using turbolinks 5.0.1
+Using activesupport 5.0.1
+Using loofah 2.0.3
+Using mail 2.6.4
+Using listen 3.0.8
+Using rails-dom-testing 2.0.2
+Using globalid 0.3.7
+Using activemodel 5.0.1
+Using jbuilder 2.6.1
+Using spring 2.0.1
+Using rails-html-sanitizer 1.0.3
+Using activejob 5.0.1
+Using activerecord 5.0.1
+Using spring-watcher-listen 2.0.1
+Using actionview 5.0.1
+Using actionpack 5.0.1
+Using actioncable 5.0.1
+Using actionmailer 5.0.1
+Using railties 5.0.1
+Using sprockets-rails 3.2.0
+Using coffee-rails 4.2.1
+Using jquery-rails 4.2.2
+Using web-console 3.4.0
+Using rails 5.0.1
+Using sass-rails 5.0.6
+Bundle updated!
+[vagrant@wealthcare-api-1 blog]$ rails s
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:51: warning: constant ::Fixnum is deprecated
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:52: warning: constant ::Bignum is deprecated
+=> Booting Puma
+=> Rails 5.0.1 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+/home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/numeric/conversions.rb:138: warning: constant ::Fixnum is deprecated
+Puma starting in single mode...
+* Version 3.7.0 (ruby 2.4.0-p0), codename: Snowy Sagebrush
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/" for 192.168.0.10 at 2017-02-09 06:25:29 +0900
+Cannot render console from 192.168.0.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 25ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+^CExiting
+[vagrant@wealthcare-api-1 blog]$
